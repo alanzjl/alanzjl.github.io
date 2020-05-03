@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Alan Zhao"
+title: "Alan (Jialiang) Zhao"
 excerpt: "About me"
 author_profile: true
 redirect_from: 

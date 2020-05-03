@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "About me"
 title_separator          : "-"
-name                     : &name "Alan Zhao"
+name                     : &name "Alan (Jialiang) Zhao"
 description              : &description "My online (academic) resume"
 url                      : http://127.0.0.1:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Alan (Jialiang) Zhao"
+  name             : "Alan Zhao"
   avatar           : "profile.png"
   bio              : "Research Assistant at the Robotics Institute, Carnegie Mellon University"
   location         : "Pittsburgh, Pennsylvania"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "jialiang-zhao"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
