@@ -42,6 +42,22 @@ I'm also a passionate travel photographer. Checkout [www.alanz.info](http://www.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
+**Introduction and Initial Exploration to an Automatic Tennis Ball Collecting Machine**
+
+***J. Zhao***, H. Ma, J. Shi, and Y. Liu. Submitted and accepted to 2017 European Conference on Mobile Robots (ECMR). Presentation. [[web](https://ieeexplore.ieee.org/document/8098684)] [[pdf](/files/ECMR.pdf)]
+
+![tennimate](/images/tennimate.png)
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+**Web-Based Human Robot Interaction via Live Video Streaming and Voice**
+
+J. Shi, H. Ma, ***J. Zhao***, and Y. Liu. Submitted and accepted to 2017 International Conference on Intelligent Robotics and Applications (ICIRA). Presentation. [[web](https://link.springer.com/chapter/10.1007/978-3-319-65289-4_38)]
+
+![tennimatevoice](/images/tennimate_voice.png)
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
 For more info
 ------
 Please see my resume [[pdf](/files/resume.pdf)].
