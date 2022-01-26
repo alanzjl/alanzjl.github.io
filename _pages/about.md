@@ -48,13 +48,6 @@ I'm also a passionate travel photographer. Checkout [www.alanz.info](http://www.
 
 ![tennimate](/images/tennimate.png)
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
-
-**Web-Based Human Robot Interaction via Live Video Streaming and Voice**
-
-J. Shi, H. Ma, ***J. Zhao***, and Y. Liu. Submitted and accepted to 2017 International Conference on Intelligent Robotics and Applications (ICIRA). Presentation. [[web](https://link.springer.com/chapter/10.1007/978-3-319-65289-4_38)]
-
-![tennimatevoice](/images/tennimate_voice.png)
 
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
