@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Alan Zhao"
+  name             : "Alan (Jialiang) Zhao"
   avatar           : "profile.png"
-  bio              : "Research Assistant at the Robotics Institute, Carnegie Mellon University"
-  location         : "Pittsburgh, Pennsylvania"
-  employer         :
+  bio              : "PhD student, MIT CSAIL"
+  location         : "Cambridge, Massachusetts, USA"
+  employer         : 
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            : "alanjz at cmu.edu"
+  googlescholar    : "https://scholar.google.com/citations?user=LaW7igYAAAAJ&hl=en"
+  email            : "alanzhao at csail.mit.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
