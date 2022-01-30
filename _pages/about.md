@@ -10,8 +10,11 @@ redirect_from:
 
 ### Hi there!
  
-I'm a MechE PhD student with the [Perceptual Science Group](http://persci.mit.edu/) at [MIT CSAIL](https://www.csail.mit.edu/). 
-I'm advised by [Professor Edward H. Adelson](http://persci.mit.edu/people/adelson). I received my *M.S. in Robotics* degree from [The Robotics Institute](https://www.ri.cmu.edu/) at Carnegie Mellon University, where I was advised by [Professor Oliver Kroemer](https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/) at the [Intelligent Autonomous Manipulation (IAM)](https://labs.ri.cmu.edu/iam/) lab.
+I'm a MechE PhD student with the [Perceptual Science Group](http://persci.mit.edu/) at [***MIT CSAIL***](https://www.csail.mit.edu/). 
+I'm advised by [Professor Edward H. Adelson](http://persci.mit.edu/people/adelson). 
+Before joining MIT, I worked at [***Nuro Inc.***](https://www.nuro.ai/) as a full-time software engineer on autonomous vehicle behavior (planning & maneuvers), for roughly a year. 
+
+I received my *M.S. in Robotics* degree from [***The Robotics Institute***](https://www.ri.cmu.edu/) at Carnegie Mellon University, where I was advised by [Professor Oliver Kroemer](https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/) at the [Intelligent Autonomous Manipulation (IAM)](https://labs.ri.cmu.edu/iam/) lab.
 
 My research interest mainly lies in ***robotic manipulatio*** and ***robot learning***. In particular, I'm interested in designing ***tactile*** sensors and using them to devise manipulation polies. 
 Over the past few years, I have been working on reducing uncertainties for robotic assembly tasks by learning precise and task-oriented grasps, and learning contact-rich manipulation tasks by composing hierarchical controllers.
