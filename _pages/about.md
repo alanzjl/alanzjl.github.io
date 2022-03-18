@@ -16,7 +16,7 @@ Before joining MIT, I worked at [***Nuro Inc.***](https://www.nuro.ai/) as a ful
 
 I received my *M.S. in Robotics* degree from [***The Robotics Institute***](https://www.ri.cmu.edu/) at Carnegie Mellon University, where I was advised by [Professor Oliver Kroemer](https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/) at the [Intelligent Autonomous Manipulation (IAM)](https://labs.ri.cmu.edu/iam/) lab.
 
-My research interest mainly lies in ***robotic manipulatio*** and ***robot learning***. In particular, I'm interested in designing ***tactile*** sensors and using them to devise manipulation polies. 
+My research interest mainly lies in ***robotic manipulation*** and ***robot learning***. In particular, I'm interested in designing ***tactile*** sensors and using them to devise manipulation policies. 
 Over the past few years, I have been working on reducing uncertainties for robotic assembly tasks by learning precise and task-oriented grasps, and learning contact-rich manipulation tasks by composing hierarchical controllers.
 
 Before joining CMU, I spent one year as a ***undergrad researcher at UC Berkeley*** [HART Lab](http://hart.berkeley.edu/). 
