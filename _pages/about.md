@@ -19,7 +19,7 @@ I received my *M.S. in Robotics* degree from [***The Robotics Institute***](http
 My research interest mainly lies in ***robotic manipulation*** and ***robot learning***. In particular, I'm interested in designing ***tactile*** sensors and using them to devise manipulation policies. 
 Over the past few years, I have been working on reducing uncertainties for robotic assembly tasks by learning precise and task-oriented grasps, and learning contact-rich manipulation tasks by composing hierarchical controllers.
 
-Before joining CMU, I spent one year as a ***undergrad researcher at UC Berkeley*** [HART Lab](http://hart.berkeley.edu/). 
+Before joining CMU, I spent one year as an ***undergrad researcher at UC Berkeley*** [HART Lab](http://hart.berkeley.edu/). 
 I worked on modelling and designing controllers for an active [Upper Limb Exoskeleton](http://hart.berkeley.edu/exoskeletons.html) under the supervision of [Professor Ruzena Bajcsy](https://people.eecs.berkeley.edu/~bajcsy/).
 
 In my spare time, I enjoy software and hardware ***robotics DIY***.
