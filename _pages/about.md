@@ -96,8 +96,8 @@ Software and hardware W.I.P. Details to be added.
 
 <hr style="height:5px;border-width:0;color:gray;background-color:gray">
 
-### **RPI_AirPlay_HiFi**
-AirPlay + DAC + AMP, using a Raspberry Pi Zero W and HiFiBerry.
+### **RPI AirPlay HiFi**
+AirPlay + DAC + AMP, using a Raspberry Pi Zero W and HiFiBerry. Source files & instructins can be found in [GitHub: alanzjl/RPI_AirPlay_HiFi](https://github.com/alanzjl/RPI_AirPlay_HiFi)
 
 ![hifi](/images/explode.JPG)
 
