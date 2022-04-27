@@ -103,6 +103,13 @@ AirPlay + DAC + AMP, using a Raspberry Pi Zero W and HiFiBerry. Source files & i
 
 <hr style="height:5px;border-width:0;color:gray;background-color:gray">
 
+### **2'' Filter drawer for astrophotography**
+A filter drawer that houses a single 2'' filter that you may want to use between a telescope and a camera. Source files & instructins can be found in [GitHub: alanzjl/FilterDrawer](https://github.com/alanzjl/FilterDrawer)
+
+![filterdrawer](/images/filter_drawer.gif)
+
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+
 <a id="resume"></a>
 
 ## For more info
