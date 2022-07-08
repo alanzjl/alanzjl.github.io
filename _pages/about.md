@@ -110,6 +110,16 @@ A filter drawer that houses a single 2'' filter that you may want to use between
 
 <hr style="height:5px;border-width:0;color:gray;background-color:gray">
 
+### **Equatorial mount built with HarmonicDrive for astrophotography**
+
+#### See [my blog post](/posts/2022/07/diy-mount/) about this design!
+
+A small yet sturdy equatorial mount built for astronomy/astrophotography, using real HarmonicDrive gearboxes. WIP. Will add the design files once finished.
+
+![hdmount](/images/hdmount/design2.jpeg)
+
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+
 <a id="resume"></a>
 
 ## For more info
