@@ -34,6 +34,15 @@ Check out the [#open-source](#open-source) section for released projects.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
+### **FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback**
+
+<sup>***J. Zhao***, M. Bauza, and E. Adelson. Accepted to the 2023 IEEE International Conference on Robotics and Automation (ICRA 2023) [[arxiv](https://arxiv.org/abs/2303.07997)] </sup>
+
+![ICRA2021](/images/fingerslam.gif)
+
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
 ### **Causal Reasoning in Simulation for Structure and Transfer Learning of Robot Manipulation Policies**
 
 <sup>T. E. Lee, ***J. Zhao***, A. S. Sawhney, S. Girdhar, O. Kroemer. Accepted to the 2021 IEEE International Conference on Robotics and Automation (ICRA 2021) [[arxiv](https://arxiv.org/abs/2103.16772)] [[website](https://sites.google.com/view/crest-causal-struct-xfer-manip)]</sup>
@@ -70,9 +79,14 @@ Check out the [#open-source](#open-source) section for released projects.
 
 <sup>***J. Zhao***, H. Ma, J. Shi, and Y. Liu. Submitted and accepted to 2017 European Conference on Mobile Robots (ECMR). Presentation. [[paper](https://ieeexplore.ieee.org/document/8098684)]</sup>
 
-![tennimate](/images/tennimate.png)
+<!-- ![tennimate](/images/tennimate.png) -->
 
 
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+
+### **Annotation and detection of emotion in text-based dialogue systems with CNN**
+
+<sup>***J. Zhao*** and Q. Gao. [[arXiv paper](https://arxiv.org/abs/1710.00987)]</sup>
 <hr style="height:5px;border-width:0;color:gray;background-color:gray">
 
 <a id="open-source"></a>
@@ -114,9 +128,10 @@ A filter drawer that houses a single 2'' filter that you may want to use between
 
 #### See [my blog post](/posts/2022/07/diy-mount/) about this design!
 
-A small yet sturdy equatorial mount built for astronomy/astrophotography, using real HarmonicDrive gearboxes. WIP. Will add the design files once finished.
+A small yet sturdy equatorial mount built for astronomy/astrophotography, using real HarmonicDrive gearboxes. Fully open-sourced. [GitHub: alanzjl/AlkaidMount](https://github.com/alanzjl/AlkaidMount), [YouTube](https://www.youtube.com/watch?v=k2GoMa2DpH8), [BiliBili](https://www.bilibili.com/video/BV1SR4y1X7bt)
 
-![hdmount](/images/hdmount/design2.jpeg)
+<!-- ![hdmount](/images/hdmount/design2.jpeg) -->
+![anim](https://github.com/alanzjl/HDMount/raw/main/renderings/GIF.gif)
 
 <hr style="height:5px;border-width:0;color:gray;background-color:gray">
 
