@@ -30,9 +30,10 @@ Check out the [#open-source](#open-source) section for released projects.
 
 <a id="research"></a>
 
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
 ## Research
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
 ### **FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback**
 
@@ -41,7 +42,7 @@ Check out the [#open-source](#open-source) section for released projects.
 ![ICRA2021](/images/fingerslam.gif)
 
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **Causal Reasoning in Simulation for Structure and Transfer Learning of Robot Manipulation Policies**
 
@@ -49,7 +50,7 @@ Check out the [#open-source](#open-source) section for released projects.
 
 ![ICRA2021](/images/icra2021.png)
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **Learning to Compose Hierarchical Object-Centric Controllers for Robotic Manipulation**
 
@@ -57,7 +58,7 @@ Check out the [#open-source](#open-source) section for released projects.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JZwlys5Jdfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **Towards Robotic Assembly by Predicting Robust, Precise and Task-oriented Grasps**
 
@@ -65,7 +66,7 @@ Check out the [#open-source](#open-source) section for released projects.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6F54Cta-q7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **Towards Precise Robotic Grasping by Probabilistic Post-grasp Displacement Estimation**
 
@@ -73,7 +74,7 @@ Check out the [#open-source](#open-source) section for released projects.
 
 ![FSR2019](/images/FSR2019.png)
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **Introduction and Initial Exploration to an Automatic Tennis Ball Collecting Machine**
 
@@ -82,12 +83,13 @@ Check out the [#open-source](#open-source) section for released projects.
 <!-- ![tennimate](/images/tennimate.png) -->
 
 
-<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **Annotation and detection of emotion in text-based dialogue systems with CNN**
 
 <sup>***J. Zhao*** and Q. Gao. [[arXiv paper](https://arxiv.org/abs/1710.00987)]</sup>
-<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
 <a id="open-source"></a>
 
@@ -99,7 +101,7 @@ It contains mechanical switches, rotary encoders, sliders, a joystick, and a sma
 
 ![neptunemidi](https://github.com/alanzjl/NeptuneMIDI/raw/master/rendering/p1.JPG)
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **RS-Slider**
 A mostly 3d printed, motorized, 2-axis camera slider that is Really Solid (R.S.). 
@@ -108,21 +110,21 @@ Software and hardware W.I.P. Details to be added.
 
 ![slider](/images/rs_slider.jpeg)
 
-<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **RPI AirPlay HiFi**
 AirPlay + DAC + AMP, using a Raspberry Pi Zero W and HiFiBerry. Source files & instructins can be found in [GitHub: alanzjl/RPI_AirPlay_HiFi](https://github.com/alanzjl/RPI_AirPlay_HiFi)
 
 ![hifi](/images/explode.JPG)
 
-<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **2'' Filter drawer for astrophotography**
 A filter drawer that houses a single 2'' filter that you may want to use between a telescope and a camera. Source files & instructins can be found in [GitHub: alanzjl/FilterDrawer](https://github.com/alanzjl/FilterDrawer)
 
 ![filterdrawer](/images/filter_drawer.gif)
 
-<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+-----
 
 ### **Equatorial mount built with HarmonicDrive for astrophotography**
 
@@ -133,7 +135,7 @@ A small yet sturdy equatorial mount built for astronomy/astrophotography, using 
 <!-- ![hdmount](/images/hdmount/design2.jpeg) -->
 ![anim](https://github.com/alanzjl/HDMount/raw/main/renderings/GIF.gif)
 
-<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
 <a id="resume"></a>
 
