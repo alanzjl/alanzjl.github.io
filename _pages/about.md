@@ -37,7 +37,7 @@ Check out the [#open-source](#open-source) section for released projects.
 
 ### **FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback**
 
-<sup>***J. Zhao***, M. Bauza, and E. Adelson. Accepted to the 2023 IEEE International Conference on Robotics and Automation (ICRA 2023) [[arxiv](https://arxiv.org/abs/2303.07997)] </sup>
+<sup>***J. Zhao***, M. Bauza, and E. Adelson. Accepted to the 2023 IEEE International Conference on Robotics and Automation (ICRA 2023) [[arxiv](https://arxiv.org/abs/2303.07997)] [[YouTube](https://youtu.be/f9qXYeQI9_M)]</sup>
 
 ![ICRA2021](/images/fingerslam.gif)
 
