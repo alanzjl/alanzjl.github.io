@@ -10,7 +10,7 @@ redirect_from:
 
 ### Hi there!
  
-I'm a PhD student with the [Perceptual Science Group](http://persci.mit.edu/) at [***MIT CSAIL***](https://www.csail.mit.edu/). 
+I'm a PhD candidate with the [Perceptual Science Group](http://persci.mit.edu/) at [***MIT CSAIL***](https://www.csail.mit.edu/). 
 I'm advised by [Professor Edward H. Adelson](http://persci.mit.edu/people/adelson). 
 Before joining MIT, I worked at [***Nuro Inc.***](https://www.nuro.ai/) as a full-time software engineer on autonomous vehicle behavior (planning & maneuvers), for a year. 
 
