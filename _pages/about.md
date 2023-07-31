@@ -34,6 +34,19 @@ Check out the [#open-source](#open-source) section for released projects.
 
 ## Research
 
+### **GelSight Svelte Hand: A Three-finger, Two-DoF, Low-cost, Tactile-rich Robot Hand for Dexterous Manipulation**
+
+<sup>***J. Zhao*** and E. Adelson. Submitted to the IROS workshop on Visuo-Tactile Perception, Learning, Control for Manipulation and HRI (IROS RoboTac 2023) [link and picture coming soon]
+
+
+-----
+
+### **GelSight Svelte: A Human Finger-shaped Single-camera Tactile Robot Finger with Large Sensing Coverage and Proprioceptive Sensing**
+
+<sup>***J. Zhao*** and E. Adelson. Accepted to the 2023 International Conference on Intelligent Robots and Systems (IROS 2023) [link and picture coming soon]
+
+
+-----
 
 ### **FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback**
 
@@ -95,6 +108,17 @@ Check out the [#open-source](#open-source) section for released projects.
 
 ## Open Source
 
+### **Equatorial mount built with HarmonicDrive for astrophotography**
+
+#### See [my blog post](/posts/2022/07/diy-mount/) about this design!
+
+A small yet sturdy equatorial mount built for astronomy/astrophotography, using real HarmonicDrive gearboxes. Fully open-sourced. [GitHub: alanzjl/AlkaidMount](https://github.com/alanzjl/AlkaidMount), [YouTube](https://www.youtube.com/watch?v=k2GoMa2DpH8), [BiliBili](https://www.bilibili.com/video/BV1SR4y1X7bt)
+
+<!-- ![hdmount](/images/hdmount/design2.jpeg) -->
+![anim](https://github.com/alanzjl/HDMount/raw/main/renderings/GIF.gif)
+
+-----
+
 ### **Neptune MIDI**
 A 3d printed MIDI controller that can be used for video and photo editing (Lightroom, Photoshop, Premiere, DaVinci Resolve, etc.)
 It contains mechanical switches, rotary encoders, sliders, a joystick, and a small oled screen. Solidworks source files, STL files, BOM are fully open source. [[github](https://github.com/alanzjl/NeptuneMIDI)]  [[youtube](https://www.youtube.com/watch?v=679nCupdGUM)]  [[bilibili](https://www.bilibili.com/video/BV15q4y1V7St?from=search&seid=7278600609111384034)]
@@ -123,17 +147,6 @@ AirPlay + DAC + AMP, using a Raspberry Pi Zero W and HiFiBerry. Source files & i
 A filter drawer that houses a single 2'' filter that you may want to use between a telescope and a camera. Source files & instructins can be found in [GitHub: alanzjl/FilterDrawer](https://github.com/alanzjl/FilterDrawer)
 
 ![filterdrawer](/images/filter_drawer.gif)
-
------
-
-### **Equatorial mount built with HarmonicDrive for astrophotography**
-
-#### See [my blog post](/posts/2022/07/diy-mount/) about this design!
-
-A small yet sturdy equatorial mount built for astronomy/astrophotography, using real HarmonicDrive gearboxes. Fully open-sourced. [GitHub: alanzjl/AlkaidMount](https://github.com/alanzjl/AlkaidMount), [YouTube](https://www.youtube.com/watch?v=k2GoMa2DpH8), [BiliBili](https://www.bilibili.com/video/BV1SR4y1X7bt)
-
-<!-- ![hdmount](/images/hdmount/design2.jpeg) -->
-![anim](https://github.com/alanzjl/HDMount/raw/main/renderings/GIF.gif)
 
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
