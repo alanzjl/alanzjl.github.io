@@ -34,6 +34,15 @@ Check out the [#open-source](#open-source) section for released projects.
 
 ## Research
 
+
+### **GelSight Svelte: A Human Finger-shaped Single-camera Tactile Robot Finger with Large Sensing Coverage and Proprioceptive Sensing**
+
+<sup>***J. Zhao*** and E. Adelson. Accepted to the 2023 International Conference on Intelligent Robots and Systems (IROS 2023) [[Website](https://gelsight-svelte.alanz.info/)][[arXiv](https://arxiv.org/abs/2309.10885)][[YouTube](https://youtu.be/yI6WDzfYD8Q?si=OLWQr9AKQxbBr0oQ)] <b style="color:#EA531B">Best Overall Paper Award Finalist</b>
+
+![ICRA2021](/images/gelsightsvelte1.gif)
+-----
+
+
 ### **GelSight Svelte Hand: A Three-finger, Two-DoF, Low-cost, Tactile-rich Robot Hand for Dexterous Manipulation**
 
 <sup>***J. Zhao*** and E. Adelson. Submitted to the IROS workshop on Visuo-Tactile Perception, Learning, Control for Manipulation and HRI (IROS RoboTac 2023) [[Website](https://gelsight-svelte.alanz.info/)][[arXiv](https://arxiv.org/abs/2309.10886)]
@@ -42,12 +51,6 @@ Check out the [#open-source](#open-source) section for released projects.
 
 -----
 
-### **GelSight Svelte: A Human Finger-shaped Single-camera Tactile Robot Finger with Large Sensing Coverage and Proprioceptive Sensing**
-
-<sup>***J. Zhao*** and E. Adelson. Accepted to the 2023 International Conference on Intelligent Robots and Systems (IROS 2023) [[Website](https://gelsight-svelte.alanz.info/)][[arXiv](https://arxiv.org/abs/2309.10885)][[YouTube](https://youtu.be/yI6WDzfYD8Q?si=OLWQr9AKQxbBr0oQ)]
-
-![ICRA2021](/images/gelsightsvelte1.gif)
------
 
 ### **FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback**
 
