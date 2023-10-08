@@ -37,7 +37,7 @@ Check out the [#open-source](#open-source) section for released projects.
 
 ### **GelSight Svelte: A Human Finger-shaped Single-camera Tactile Robot Finger with Large Sensing Coverage and Proprioceptive Sensing**
 
-<sup>***J. Zhao*** and E. Adelson. Accepted to the 2023 International Conference on Intelligent Robots and Systems (IROS 2023) [[Website](https://gelsight-svelte.alanz.info/)][[arXiv](https://arxiv.org/abs/2309.10885)][[YouTube](https://youtu.be/yI6WDzfYD8Q?si=OLWQr9AKQxbBr0oQ)] <b style="color:#EA531B">Best Overall Paper Award Finalist</b>
+<sup>***J. Zhao*** and E. Adelson. Accepted to the 2023 International Conference on Intelligent Robots and Systems (IROS 2023) [[Website](https://gelsight-svelte.alanz.info/)][[arXiv](https://arxiv.org/abs/2309.10885)][[YouTube](https://youtu.be/yI6WDzfYD8Q?si=OLWQr9AKQxbBr0oQ)][[Media](https://news.mit.edu/2023/finger-shaped-sensor-enables-more-dexterous-robots-1004)] <b style="color:#EA531B">Best Overall Paper Award Finalist</b>
 
 ![ICRA2021](/images/gelsightsvelte1.gif)
 -----
