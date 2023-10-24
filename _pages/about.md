@@ -158,7 +158,7 @@ A filter drawer that houses a single 2'' filter that you may want to use between
 
 ## For more info
 
-Please see my resume [[pdf](/files/resume.pdf)].
+Please see my resume [[pdf](/files/AlanZhao.pdf)].
 
 ------
 
