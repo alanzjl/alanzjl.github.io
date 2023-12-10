@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Webpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius&family=Exo:wght@300;900&display=swap');
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class=" sticky-top" id="mainHeader">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-end">
+                <img src="images/profile.jpg" alt="Alan Zhao" id="profilePicture" class="img-thumbnail">
+            </div>
+            <div class="col-9 col-md-7 col-lg-6" id="name">
+                <h1> Alan <span>(Jialiang)</span> Zhao</h1>
+                <p>PhD Candidate, MIT CSAIL</p>
+                <nav class="navbar navbar-expand-xl navbar-light align-self-end px-4 py-1 border border-success rounded"
+                    id="mainNav">
+                    <a class="navbar-brand d-block d-xl-none contact" href="#">Contact</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" aria-current="page"
+                                    href="https://www.linkedin.com/in/jialiang-zhao"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                                    </svg> <span class="d-inline contact-names">LinkedIn</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" aria-current="page"
+                                    href="https://github.com/alanzjl"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg> <span class="d-inline contact-names">GitHub</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" aria-current="page"
+                                    href="https://scholar.google.com/citations?user=LaW7igYAAAAJ&hl=en"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                                        <path
+                                            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z" />
+                                    </svg> <span class="d-inline contact-names">Scholar</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" aria-current="page"
+                                    href="mailto:alanzhao@csail.mit.edu"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                                        <path
+                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                                    </svg> <span class="d-inline contact-names">alanzhao@csail.mit.edu</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 main-intro">
+
+                <h1 class="mb-4 greeting">Hi there!</h1>
+                <p>
+                    I'm currently a PhD candidate with the Perceptual Science Group at <a href="https://www.csail.mit.edu/">MIT CSAIL</a>. I'm advised by
+                    <a href="https://bcs.mit.edu/directory/edward-adelson">Professor Edward H. Adelson</a>. Below is a short summay of what I've been up to in recent years:
+                </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-2 date text-end">2022 - now:</div>
+                    <div class="col-9">
+                        <p> Working towards my PhD at MIT CSAIL and MechE. I build tactile sensors to bring touch sensing to
+                            robots, and I research ways to teach robots to interact with things, or the world.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2 date text-end">2021 - 2022:</div>
+                    <div class="col-9">
+                        <p> Worked on planning & prediction for self-driving cars at <a href="https://www.nuro.ai/">Nuro Inc</a>. I enjoyed developing my
+                            own algorithms then seeing real cars running on real streets with it. It felt a bit crazy
+                            (and maybe a little bit uneasy) when I also sat in that car. Also enjoyed the California
+                            sunshine.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-2 date text-end">2018 - 2020:</div>
+                    <div class="col-9">
+                        <p> Worked towards my Master in Robotics degree at The Robotics Institute of Carnegie Mellon
+                            University. Had the great pleasure to work with <a href="https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/">Prof. Oliver Kroemer</a> at the <a href="https://labs.ri.cmu.edu/iam/">IAM lab</a>. Focused
+                            mostly on robot learning for robot manipulation.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-2 date text-end">2017 - 2018:</div>
+                    <div class="col-9">
+                        <p> Worked on building & optimizing exoskeletons with <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/bajcsy.html">Prof. Ruzena Bajcsy</a> at UC Berkeley <a href="http://hart.berkeley.edu/">HART
+                            Lab</a> as an undergrad researcher.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>
+                        Out of work & school, I enjoy software and hardware robotics DIY. I recently started filming
+                        some of my hardware DIYs. Check out my YouTube channel <a href="https://www.youtube.com/channel/UCnIEhwA_XKNF-f2FF7HhlJQ">Crafted by JZ</a> or my BiliBili channel <a href="https://space.bilibili.com/1400874850/">试作间</a>
+                        if interested. Check out the <a href="#hobby">#hobby</a> section for released projects. Recently I'm working on an ambituous software project called <a href="https://tpvortex.org/">tpvortex.org</a>. Stay tuned.
+                    </p>
+                </div>
+
+                <h1 class="mb-4 mt-5 section-names text-center">News</h1>
+                <ul>
+                    <li><span class="date">2023 Oct:</span> My paper on GelSight Svelte was <span class="award">nominated for the best paper
+                        award</span> at IROS 2023!</li>
+                    <li><span class="date">2023 May:</span> My paper FingerSLAM was presented at ICRA in London.</li>
+                    <li><span class="date">2023 May:</span> I passed my qualification exam, so I'm officially a PhD
+                        candidate now:)</li>
+                </ul>
+
+                <h1 class="mb-4 mt-5 section-names text-center" id="research">Research</h1>
+
+                <div>
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <img src="images/research/electro.gif" alt="Electronics insertion"
+                                class="img-fluid-2 img-thumbnail">
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">Learning to insert electronics with submillimeter-level tolerance from tactile sensing and extrinsic contacts</div>
+                            <div class="authors"><span class="me">J. Zhao</span> as the leading contributor. In preparation.</div>
+                            <div class="links" style="font-weight: 100;">
+                                more details coming soon.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <img src="images/research/poco.png" alt="policy composition"
+                                class="img-fluid-2 img-thumbnail">
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">PoCo: Policy Composition From and For Heterogeneous Robot Learning</div>
+                            <div class="authors">L. Wang, <span class="me">J. Zhao</span>, Y. Du, E. Adelson, R. Tedrake. In preparation.</div>
+                            <div class="links" style="font-weight: 100;">
+                                more details coming soon.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <img src="images/research/taclink.jpg" alt="TacLink Sensor"
+                                class="img-fluid-2 img-thumbnail">
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">TacLink: A Compact Multi-phalanx Finger with Vision-based Tactile
+                                Sensing and Proprioception</div>
+                            <div class="authors">Y. Ma, <span class="me">J. Zhao</span>, E. Adelson. Submitted to the 2024
+                                IEEE International Conference on Robotics and Automation (ICRA 2024). Under review.</div>
+                            <div class="links" style="font-weight: 100;">
+                                more details coming soon.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <img src="images/research/gelsightsvelte.gif" alt="Gelsight Svelte sensor"
+                                class="img-fluid-2 img-thumbnail">
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">GelSight Svelte: A Human Finger-shaped Single-camera Tactile Robot
+                                Finger with Large Sensing Coverage and Proprioceptive Sensing</div>
+                            <div class="authors"><span class="me">J. Zhao</span> and E. Adelson. Accepted to the 2023
+                                International Conference on Intelligent Robots and Systems (IROS 2023)</div>
+                            <div class="links">
+                                <a href="https://gelsight-svelte.alanz.info/" class="link-item">Website</a>
+                                <a href="https://arxiv.org/abs/2309.10885" class="link-item">arXiv</a>
+                                <a href="https://youtu.be/yI6WDzfYD8Q?si=OLWQr9AKQxbBr0oQ" class="link-item">YouTube</a>
+                                <a href="https://news.mit.edu/2023/finger-shaped-sensor-enables-more-dexterous-robots-1004"
+                                    class="link-item">Media</a>
+                                <span class="award">Best Overall Paper Award Finalist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <img src="images/research/gelsightsveltehand.gif" alt="Gelsight Svelte Hand"
+                                class="img-fluid-2 img-thumbnail">
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">GelSight Svelte Hand: A Three-finger, Two-DoF, Low-cost,
+                                Tactile-rich Robot Hand for Dexterous Manipulation</div>
+                            <div class="authors"><span class="me">J. Zhao</span> and E. Adelson. Submitted to the IROS
+                                workshop on Visuo-Tactile Perception, Learning, Control for Manipulation and HRI (IROS
+                                RoboTac 2023)</div>
+                            <div class="links">
+                                <a href="https://gelsight-svelte.alanz.info/" class="link-item">Website</a>
+                                <a href="https://arxiv.org/abs/2309.10886" class="link-item">arXiv</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <img src="images/research/fingerslam.gif"
+                                alt="FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback"
+                                class="img-fluid-2 img-thumbnail">
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">FingerSLAM: Closed-loop Unknown Object Localization and
+                                Reconstruction from Visuo-tactile Feedback</div>
+                            <div class="authors"><span class="me">J. Zhao</span>, M. Bauza, and E. Adelson. Accepted to
+                                the 2023 IEEE International Conference on Robotics and Automation (ICRA 2023)</div>
+                            <div class="links">
+                                <a href="https://arxiv.org/abs/2303.07997" class="link-item">arXiv</a>
+                                <a href="https://youtu.be/f9qXYeQI9_M" class="link-item">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <img src="images/research/crest.png"
+                                alt="Causal Reasoning in Simulation for Structure and Transfer Learning of Robot Manipulation Policies"
+                                class="img-fluid-2 img-thumbnail">
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">Causal Reasoning in Simulation for Structure and Transfer Learning
+                                of Robot Manipulation Policies</div>
+                            <div class="authors">T. E. Lee, <span class="me">J. Zhao</span>, A. S. Sawhney, S. Girdhar,
+                                O. Kroemer. Accepted to the 2021 IEEE International Conference on Robotics and
+                                Automation (ICRA 2021)</div>
+                            <div class="links">
+                                <a href="https://arxiv.org/abs/2103.16772" class="link-item">arXiv</a>
+                                <a href="https://sites.google.com/view/crest-causal-struct-xfer-manip"
+                                    class="link-item">Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/JZwlys5Jdfo"
+                                title="Learning to Compose Hierarchical Object-Centric Controllers for Robotic Manipulation"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">Learning to Compose Hierarchical Object-Centric Controllers for
+                                Robotic Manipulation</div>
+                            <div class="authors">M. Sharma*, J. Liang*, <span class="me">J. Zhao</span>, A. LaGrassa, O.
+                                Kroemer. Conference on Robot Learning (CoRL). November 2020. </div>
+                            <div class="links">
+                                <a href="https://arxiv.org/abs/2011.04627" class="link-item">arXiv</a>
+                                <a href="https://sites.google.com/view/compositional-object-control/"
+                                    class="link-item">Website</a>
+                                <a href="https://www.youtube.com/watch?v=JZwlys5Jdfo" class="link-item">YouTube</a>
+                                <span class="award">Plenary Presentation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/6F54Cta-q7I"
+                                title="Learning to Compose Hierarchical Object-Centric Controllers for Robotic Manipulation"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">Learning to Compose Hierarchical Object-Centric Controllers for
+                                Robotic Manipulation</div>
+                            <div class="authors"><span class="me">J. Zhao</span>D. Troniak, O.Kroemer. Submitted and
+                                accepted to 2020 Conference on Robot Learning (CoRL 2020). Oral presentation. </div>
+                            <div class="links">
+                                <a href="https://arxiv.org/abs/2011.02462" class="link-item">arXiv</a>
+                                <a href="https://www.youtube.com/watch?v=6F54Cta-q7I" class="link-item">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom">
+                        <div class="col-4">
+                            <img src="images/research/FSR2019.png"
+                                alt="Towards Precise Robotic Grasping by Probabilistic Post-grasp Displacement Estimation"
+                                class="img-fluid-2 img-thumbnail">
+                        </div>
+                        <div class="col-8 research-block">
+                            <div class="paper-title">Towards Precise Robotic Grasping by Probabilistic Post-grasp
+                                Displacement Estimation</div>
+                            <div class="authors"><span class="me">J. Zhao</span>, J. Liang, O.Kroemer. Submitted and
+                                accepted to 12th Conference on Field and Service Robotics (FSR 2019). Oral presentation.
+                            </div>
+                            <div class="links">
+                                <a href="https://arxiv.org/abs/1909.02129" class="link-item">arXiv</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 border-bottom text-center d-flex align-items-center">
+                        <p class="my-0 more-paper">...more on my <a
+                                href="https://scholar.google.com/citations?user=LaW7igYAAAAJ&hl=en">Google Scholar</a>
+                            page.</p>
+                    </div>
+                </div>
+
+                <h1 class="mb-4 mt-5 section-names text-center" id="hobby">Hobby Corner</h1>
+                <div>
+                    <div class="row d-flex justify-content-between mb-5">
+                        <div class="card d-inline-block px-0" style="width: 49%;">
+                            <img class="card-img-top" src="images/research/alkaidmount.gif" alt="Alkaid Mount">
+                            <div class="card-body">
+                                <p class="card-text paper-title">Alkaid Mount: Equatorial mount built with HarmonicDrive
+                                    for astrophotography</p>
+                                <p class="card-text">A small yet sturdy equatorial mount built for
+                                    astronomy/astrophotography, using real HarmonicDrive gearboxes. Fully open-sourced.
+                                </p>
+                                <div class="links">
+                                    <a href="https://github.com/alanzjl/AlkaidMount" class="link-item">GitHub</a>
+                                    <a href="https://www.youtube.com/watch?v=k2GoMa2DpH8" class="link-item">YouTube</a>
+                                    <a href="https://www.bilibili.com/video/BV1SR4y1X7bt" class="link-item">BiliBili</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card d-inline-block px-0" style="width: 49%;">
+                            <img class="card-img-top" src="images/research/midi.jpeg" alt="Neptune MIDI">
+                            <div class="card-body">
+                                <p class="card-text paper-title">Neptune MIDI</p>
+                                <p class="card-text">A 3d printed MIDI controller that can be used for video and photo
+                                    editing (Lightroom, Photoshop, Premiere, DaVinci Resolve, etc.) It contains
+                                    mechanical switches, rotary encoders, sliders, a joystick, and a small oled screen.
+                                    Solidworks source files, STL files, BOM are fully open source.</p>
+                                <div class="links">
+                                    <a href="https://github.com/alanzjl/NeptuneMIDI" class="link-item">GitHub</a>
+                                    <a href="https://www.youtube.com/watch?v=679nCupdGUM" class="link-item">YouTube</a>
+                                    <a href="https://www.bilibili.com/video/BV15q4y1V7St?from=search&seid=7278600609111384034"
+                                        class="link-item">BiliBili</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mb-5">
+                        <div class="card d-inline-block px-0" style="width: 49%;">
+                            <img class="card-img-top" src="images/research/rs_slider.jpeg" alt="Neptune MIDI">
+                            <div class="card-body">
+                                <p class="card-text paper-title">RS-Slider</p>
+                                <p class="card-text">A mostly 3d printed, motorized, 2-axis camera slider that is Really
+                                    Solid (R.S.). Tested with a 15lbs cinema camera setup. Software and hardware W.I.P.
+                                    Details to be added.</p>
+                            </div>
+                        </div>
+
+                        <div class="card d-inline-block px-0" style="width: 49%;">
+                            <img class="card-img-top" src="images/research/rpi_hifi.jpeg" alt="RPI AirPlay HiFi">
+                            <div class="card-body">
+                                <p class="card-text paper-title">RPI AirPlay HiFi</p>
+                                <p class="card-text">AirPlay + DAC + AMP, using a Raspberry Pi Zero W and HiFiBerry.
+                                    Source files & instructins can be found in </p>
+                                <div class="links">
+                                    <a href="https://github.com/alanzjl/RPI_AirPlay_HiFi" class="link-item">GitHub:
+                                        alanzjl/RPI_AirPlay_HiFi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center mb-5">
+                        <div class="card d-inline-block px-0" style="width: 49%;">
+                            <img class="card-img-top" src="images/research/filter_drawer.gif" alt="Filter Drawer">
+                            <div class="card-body">
+                                <p class="card-text paper-title">2" Filter drawer for astrophotography</p>
+                                <p class="card-text">A mostly 3d printed, motorized, 2-axis camera slider that is Really
+                                    Solid (R.S.). Tested with a 15lbs cinema camera setup. Software and hardware W.I.P.
+                                    Details to be added.</p>
+                                <div class="links">
+                                    <a href="https://github.com/alanzjl/RPI_AirPlay_HiFi" class="link-item">GitHub:
+                                        alanzjl/RPI_AirPlay_HiFi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="mb-4 mt-5 section-names text-center">Resume</h1>
+                <div class="row py-3 text-center">
+                    <a href="resources/AlanZhao.pdf">[Link]</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer border-top py-3 mt-5">
+        2023 By Alan (Jialiang) Zhao. Website coded from scratch by Alan (Jialiang) Zhao. Please let me know if you see any glitches.
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

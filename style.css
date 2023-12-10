@@ -1,0 +1,152 @@
+html {
+    font-family: "Exo", sans-serif;
+    /* font-family:  sans-serif; */
+}
+
+
+#profilePicture {
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition: width 0.25s ease-in-out;
+}
+
+
+#name h1{
+    font-family: "Delius", sans-serif;
+    color: #354f52;
+    font-size: 2.5em;
+    transition: font-size 0.25s ease-in-out;
+}
+
+#name p {
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    color: #52796f;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4rem 0;
+    transition: padding 0.25s ease-in-out;
+}
+
+.shrink-header {
+    padding: 2rem 0;
+}
+
+@media (max-width: 700px) {
+    #name h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 550px) {
+    #name h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1100px) {
+    #name {
+        margin-left: 2rem;
+    }
+    #name h1 {
+        font-size: 3em;
+    }
+}
+
+.contact-names {
+    margin-left: 0.5rem;
+}  
+
+.contact {
+    color: #52796f;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+}
+
+#mainNav{
+    background-color: white;
+}
+
+#mainNav .navbar-toggler-icon{
+    font-size: 0.8em;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(82, 121, 111, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#mainNav .navbar-toggler {
+    border-color: rgb(82, 121, 111);
+    border-width: 0.1rem;
+} 
+
+#mainNav .nav-link {
+    color: #52796f;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.greeting {
+    color: #354f52;
+}
+
+.date {
+    color: #52796f;
+}
+
+.section-names {
+    color: #52796f;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+/* .main-intro {
+    border-top: 0.05em solid #46696d;
+    padding-top: 1em;
+} */
+
+.img-fluid-2 {
+    width: 100%;
+    height: auto;
+}
+
+.research-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paper-title {
+    font-weight: bold;
+    color: #52796f;
+}
+
+a {
+    color: #84a98c;
+}
+
+.award {
+    font-weight: bold;
+    color: #d62828;
+}
+
+.me {
+    font-weight: bold;
+    font-style: italic;
+    color: #84a98c;
+}
+
+.more-paper {
+    color: #52796f;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.footer {
+    text-align: center;
+    font-weight: 100;
+    font-size: 1rem;
+}
