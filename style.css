@@ -7,10 +7,16 @@ html {
 #profilePicture {
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    width: 100%;
     transition: width 0.25s ease-in-out;
 }
 
+.img-full-width {
+    width: 100%;
+}
+
+.shrink-picture {
+    width: 50%;
+}
 
 #name h1{
     font-family: "Delius", sans-serif;
