@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://alanz.info/posts/2022/07/diy-mount/ -->
+<html lang="en" class=" js ">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!-- begin SEO -->
+    <title>DIY equatorial mount with HarmonicDrive - About me</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="About me">
+    <meta property="og:title" content="DIY equatorial mount with HarmonicDrive">
+    <link rel="canonical" href="https://alanz.info/posts/2022/07/diy-mount/">
+    <meta property="og:url" content="https://alanz.info/posts/2022/07/diy-mount/">
+    <meta property="og:description"
+        content="Final Update Oct. 2022The mount is finally finished! The finished assembly weights ~16lbs.I tested it with a ~15lbs unbalanced setup and a ~25lbs balanced setup and it worked beautifully.All design files are released on GitHub.The building process was documented here, as well as on Youtube and BiliBili.After getting trapped deeper and deeper into this hobby I finally started looking at my mount and thinking about replacing it… (Sirius EQ-G and I’ve only been in this hobby for 3 months!) I really appreciate the EQ-G’s relatively light weight and fear that a heavier mount might destroy my enthusiasm.As a mechanical engineer (well not really, I really work more on control/learning stuff:) what can be more fun than building one by myself? So I ordered two HDs off eBay for ~&amp;dollar 1400 (the same model sells for ~ &amp;dollar 1.3k new each).What is HarmonicDrive and why using it?HDs, or more accurately speaking, strain wave gearing, is a kind of gearing mechanism that generates much more torque than other common gearing (because it has much more teeth engaged at a time), while having basically zero backlash (because it utilizes deformation - kind of similar to belts which are believed to be more or less backlash-less but HDs use deformable spring metal which is better than belts even if they are filled with steel) - or, tldr: it can drive much heavier load WITHOUT the need of counterweights!Here is a nice GIF of how strain wave gearing worksand here is a youtube video from HarmonicDrive that tells more details(07/04) DesignI have mostly finished the drawing of the metal backbone.Most of the parts will be made with 1/4” and 3/8” 6061 aluminum alloy.I’m trying to make the design such that I can waterjet as many parts as possible - I do have access to several really good Haas CNC machines at MIT, but I’m not sure if it’s totally okay if I use them for my DIY projects (however, according to the lab manager: “technically what you make here should be for your research but what you do is none of my business” plus a wink.)The current design is all waterjet-able except the dovetail clamp.Hopefully I’ll be free enough next week to start making some chips! (well not really, since they will mostly be waterjetted:)(07/07) PCBI finally finished the PCB design, and sent it to JLCPCB to manufacture… It was based on the design of the MiniPCB2 from OnStep, however even the MiniPCB has a “Mini” in its name, it’s still too big.My design has two TMC2130 stepper drivers, one PEC (Periodic Error Correction) switch connector, two extra endstop switches, a RJ11 (6 pin telescope port) connector for a hand controller.The microcontroller is a Teensy 4.0.Should be sufficiently fast.It doesn’t have a WiFi module built in but I put a connector there in case I decide to add one in the future - but I really can’t think of a reason for it now.Updated 07/15The PCB arrived!It only took the manufacture in China less than 24hrs to manufacture this PCB, and DHL shipped it to my doorsteps in 2 business days plus a weekend.That’s impressive.This is how it looks now after the soldering is done.I did a test with both motors connected and it worked flawlessly.Good job OnStep!3D Printed ShellsHere is my first attempt to design a shell for my mount’s skeleton - well I admit it’s a bit ugly…Too boxy, I guess.You can see the housing for the PCB on the RA axis.Everything weights about 5.5kg now - 4 kg for the sheleton plus motors plus gears, 1 kg for bolts (lol), and the rest for the 4mm shells printed with ABS.Waterjet first attemptOkay I admit this is actually my first time to use a waterjet - after I finished all the design that was built around waterjetting. Probably should have tested it before designing everything.Fortunately the result turns out to be very good.I’m very happy with the dimensional accuracy - the error is within 0.1mm.The only issue is that the cut is not 100% vertical.The bottom surface is about 0.1mm longer than the top surface on a 3/8” (or ~10mm) piece.Not good but not too bad. I’ll worry a bit about squareness but it should be fine since I have a lot of reinforcements.Removing the pieces and sanding the tabs are painful.Now I learned that one tab is really sufficient for a 10mm plate.Okay now that waterjetting works, I placed the order for almost everything.My new 1/4” aluminum plates should arrive next week.Tangent assemblyBecause waterjeting is only 2D, all the side holes need to be manually drilled and tapped. It took me some trial and error to find a balance between speed and efficiency. Here is the test assembly for the tangent (the base for the mount)It is not finished though.This is only a test assembly, and none of the screws are fastened (so you can see a lot of gaps).I’ll sand the surface and debur the edges after test assembling the entire mount.It turns out that the manually drilled side holes are accurate enough - one piece is slightly off and I need to make another one of it, but overall it’s pretty good.Waterjeting doneToday I finally finished waterjeting all the pieces - actually it didn’t take that long.I just really don’t enjoy staying in the waterjet room.This picture was taken before the tabs were sanded off.The next step will be drilling &amp; tapping side holes on them.Gonna be a lot of work for the weekend or next week:)Drilling, tapping, lathe, and millingAfter spending almost every night 5-8pm last week in the machine shop, all the manual work on the metal parts is done now.It turns out that the dovetail clamp took the most amount of time to machine. I need to cut off a big chunk with endmills and cut the dovetail slot (the triangle) very slowly.AssemblyFinally it’s the final assembly!Some screws are still on its way, and I haven’t 3D printed the shell and electronics compartment, so I’m only test fitting everything without tighten any screws.It turns out that I might have overengineered it…Both 3/8” and 1/4” alumiunm are stronger (and heavier) than I thought, and I don’t think I need all the screws and any of the L-shape supports to achieve enough rigidity. All the screws go in smoothly. I was worrying about the accuracy of those manually drilled side-holes, but they seem to be good enough.One last part to machine is the mount for a 20mm shaft which accepts the counterweights.Maybe I’ll also want the shaft itself to be machined from aluminum - but I have a 20mm carbon fiber tube at home and maybe I’ll just use that.First power on testingThis is exciting!Nothing exploded, so it’s good.Even better, everything seems to be working well - both motors, WiFi, ASCOM driver, web server…Final testingFor more details and results, checkout my youtube video.Tracking performanceI haven’t been able to rigorously test the mount and collect enough data.The mount also needs to be calibrated (collect many nights’ data to reduce periodic error).Boston is almost in winter now and it’s getting colder.I’ll add this section when I have the data.">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2022-07-01T00:00:00-07:00">
+    <script async="" src="./alkaidmount_files/analytics.js"></script>
+    <script
+        type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Person", "name" : "Alan (Jialiang) Zhao", "url" : "https://alanz.info", "sameAs" : null } </script>
+    <!-- end SEO -->
+    <link href="https://alanz.info/feed.xml" type="application/atom+xml" rel="alternate" title="About me Feed">
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; </script>
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="./alkaidmount_files/main.css">
+    <meta http-equiv="cleartype" content="on"> <!-- start custom head snippets -->
+    <link rel="apple-touch-icon" sizes="57x57"
+        href="https://alanz.info/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="60x60"
+        href="https://alanz.info/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="https://alanz.info/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="https://alanz.info/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="https://alanz.info/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://alanz.info/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="https://alanz.info/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://alanz.info/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://alanz.info/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+    <link rel="icon" type="image/png" href="https://alanz.info/images/favicon-32x32.png?v=M44lzPylqQ"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="https://alanz.info/images/android-chrome-192x192.png?v=M44lzPylqQ"
+        sizes="192x192">
+    <link rel="icon" type="image/png" href="https://alanz.info/images/favicon-96x96.png?v=M44lzPylqQ"
+        sizes="96x96">
+    <link rel="icon" type="image/png" href="https://alanz.info/images/favicon-16x16.png?v=M44lzPylqQ"
+        sizes="16x16">
+    <link rel="manifest" href="https://alanz.info/images/manifest.json?v=M44lzPylqQ">
+    <link rel="mask-icon" href="https://alanz.info/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+    <link rel="shortcut icon" href="https://alanz.info/images/favicon.ico?v=M44lzPylqQ">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="https://alanz.info/images/mstile-144x144.png?v=M44lzPylqQ">
+    <meta name="msapplication-config" content="https://alanz.info/images/browserconfig.xml?v=M44lzPylqQ">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./alkaidmount_files/academicons.css">
+    <script
+        type="text/x-mathjax-config;executed=true"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script
+        type="text/x-mathjax-config;executed=true"> MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); </script>
+    <script src="./alkaidmount_files/latest.js" async=""></script>
+    <!-- end custom head snippets -->
+    <script type="text/javascript" async=""
+        src="./alkaidmount_files/MathJax.js"></script>
+    <style id="fit-vids-style">
+        .fluid-width-video-wrapper {
+            width: 100%;
+            position: relative;
+            padding: 0;
+        }
+
+        .fluid-width-video-wrapper iframe,
+        .fluid-width-video-wrapper object,
+        .fluid-width-video-wrapper embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Hover_Frame {
+            border-radius: .25em;
+            -webkit-border-radius: .25em;
+            -moz-border-radius: .25em;
+            -khtml-border-radius: .25em;
+            box-shadow: 0px 0px 15px #83A;
+            -webkit-box-shadow: 0px 0px 15px #83A;
+            -moz-box-shadow: 0px 0px 15px #83A;
+            -khtml-box-shadow: 0px 0px 15px #83A;
+            border: 1px solid #A6D ! important;
+            display: inline-block;
+            position: absolute
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -khtml-border-radius: 4px;
+            font-family: 'Courier New', Courier;
+            font-size: 9px;
+            color: #F0F0F0
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow span {
+            display: block;
+            background-color: #AAA;
+            border: 1px solid;
+            border-radius: 3px;
+            line-height: 0;
+            padding: 4px
+        }
+
+        .MathJax_Hover_Arrow:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_Hover_Arrow:hover span {
+            background-color: #CCC !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_About {
+            position: fixed;
+            left: 50%;
+            width: auto;
+            text-align: center;
+            border: 3px outset;
+            padding: 1em 2em;
+            background-color: #DDDDDD;
+            color: black;
+            cursor: default;
+            font-family: message-box;
+            font-size: 120%;
+            font-style: normal;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -khtml-border-radius: 15px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_About.MathJax_MousePost {
+            outline: none
+        }
+
+        .MathJax_Menu {
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: auto;
+            padding: 5px 0px;
+            border: 1px solid #CCCCCC;
+            margin: 0;
+            cursor: default;
+            font: menu;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        .MathJax_MenuItem {
+            padding: 1px 2em;
+            background: transparent
+        }
+
+        .MathJax_MenuArrow {
+            position: absolute;
+            right: .5em;
+            padding-top: .25em;
+            color: #666666;
+            font-size: .75em
+        }
+
+        .MathJax_MenuActive .MathJax_MenuArrow {
+            color: white
+        }
+
+        .MathJax_MenuArrow.RTL {
+            left: .5em;
+            right: auto
+        }
+
+        .MathJax_MenuCheck {
+            position: absolute;
+            left: .7em
+        }
+
+        .MathJax_MenuCheck.RTL {
+            right: .7em;
+            left: auto
+        }
+
+        .MathJax_MenuRadioCheck {
+            position: absolute;
+            left: .7em
+        }
+
+        .MathJax_MenuRadioCheck.RTL {
+            right: .7em;
+            left: auto
+        }
+
+        .MathJax_MenuLabel {
+            padding: 1px 2em 3px 1.33em;
+            font-style: italic
+        }
+
+        .MathJax_MenuRule {
+            border-top: 1px solid #DDDDDD;
+            margin: 4px 3px
+        }
+
+        .MathJax_MenuDisabled {
+            color: GrayText
+        }
+
+        .MathJax_MenuActive {
+            background-color: #606872;
+            color: white
+        }
+
+        .MathJax_MenuDisabled:focus,
+        .MathJax_MenuLabel:focus {
+            background-color: #E8E8E8
+        }
+
+        .MathJax_ContextMenu:focus {
+            outline: none
+        }
+
+        .MathJax_ContextMenu .MathJax_MenuItem:focus {
+            outline: none
+        }
+
+        #MathJax_AboutClose {
+            top: .2em;
+            right: .2em
+        }
+
+        .MathJax_Menu .MathJax_MenuClose {
+            top: -10px;
+            left: -10px
+        }
+
+        .MathJax_MenuClose {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            font-family: 'Courier New', Courier;
+            font-size: 24px;
+            color: #F0F0F0
+        }
+
+        .MathJax_MenuClose span {
+            display: block;
+            background-color: #AAA;
+            border: 1.5px solid;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            line-height: 0;
+            padding: 8px 0 6px
+        }
+
+        .MathJax_MenuClose:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_MenuClose:hover span {
+            background-color: #CCC !important
+        }
+
+        .MathJax_MenuClose:hover:focus {
+            outline: none
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview .MJXf-math {
+            color: inherit !important
+        }
+    </style>
+    <style type="text/css">
+        .MJX_Assistive_MathML {
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 1px 0 0 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden !important;
+            display: block !important;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+            width: 100% !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_Zoom {
+            position: absolute;
+            background-color: #F0F0F0;
+            overflow: auto;
+            display: block;
+            z-index: 301;
+            padding: .5em;
+            border: 1px solid black;
+            margin: 0;
+            font-weight: normal;
+            font-style: normal;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            box-shadow: 5px 5px 15px #AAAAAA;
+            -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+            -moz-box-shadow: 5px 5px 15px #AAAAAA;
+            -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_ZoomOverlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+
+        #MathJax_ZoomFrame {
+            position: relative;
+            display: inline-block;
+            height: 0;
+            width: 0
+        }
+
+        #MathJax_ZoomEventTrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 302;
+            display: inline-block;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview {
+            color: #888
+        }
+
+        #MathJax_Message {
+            position: fixed;
+            left: 1em;
+            bottom: 1.5em;
+            background-color: #E6E6E6;
+            border: 1px solid #959595;
+            margin: 0px;
+            padding: 2px 8px;
+            z-index: 102;
+            color: black;
+            font-size: 80%;
+            width: auto;
+            white-space: nowrap
+        }
+
+        #MathJax_MSIE_Frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            z-index: 101;
+            border: 0px;
+            margin: 0px;
+            padding: 0px
+        }
+
+        .MathJax_Error {
+            color: #CC0000;
+            font-style: italic
+        }
+    </style>
+    <style type="text/css">
+        .MJXp-script {
+            font-size: .8em
+        }
+
+        .MJXp-right {
+            -webkit-transform-origin: right;
+            -moz-transform-origin: right;
+            -ms-transform-origin: right;
+            -o-transform-origin: right;
+            transform-origin: right
+        }
+
+        .MJXp-bold {
+            font-weight: bold
+        }
+
+        .MJXp-italic {
+            font-style: italic
+        }
+
+        .MJXp-scr {
+            font-family: MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-frak {
+            font-family: MathJax_Fraktur, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-sf {
+            font-family: MathJax_SansSerif, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-cal {
+            font-family: MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-mono {
+            font-family: MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-largeop {
+            font-size: 150%
+        }
+
+        .MJXp-largeop.MJXp-int {
+            vertical-align: -.2em
+        }
+
+        .MJXp-math {
+            display: inline-block;
+            line-height: 1.2;
+            text-indent: 0;
+            font-family: 'Times New Roman', Times, STIXGeneral, serif;
+            white-space: nowrap;
+            border-collapse: collapse
+        }
+
+        .MJXp-display {
+            display: block;
+            text-align: center;
+            margin: 1em 0
+        }
+
+        .MJXp-math span {
+            display: inline-block
+        }
+
+        .MJXp-box {
+            display: block !important;
+            text-align: center
+        }
+
+        .MJXp-box:after {
+            content: " "
+        }
+
+        .MJXp-rule {
+            display: block !important;
+            margin-top: .1em
+        }
+
+        .MJXp-char {
+            display: block !important
+        }
+
+        .MJXp-mo {
+            margin: 0 .15em
+        }
+
+        .MJXp-mfrac {
+            margin: 0 .125em;
+            vertical-align: .25em
+        }
+
+        .MJXp-denom {
+            display: inline-table !important;
+            width: 100%
+        }
+
+        .MJXp-denom>* {
+            display: table-row !important
+        }
+
+        .MJXp-surd {
+            vertical-align: top
+        }
+
+        .MJXp-surd>* {
+            display: block !important
+        }
+
+        .MJXp-script-box>* {
+            display: table !important;
+            height: 50%
+        }
+
+        .MJXp-script-box>*>* {
+            display: table-cell !important;
+            vertical-align: top
+        }
+
+        .MJXp-script-box>*:last-child>* {
+            vertical-align: bottom
+        }
+
+        .MJXp-script-box>*>*>* {
+            display: block !important
+        }
+
+        .MJXp-mphantom {
+            visibility: hidden
+        }
+
+        .MJXp-munderover {
+            display: inline-table !important
+        }
+
+        .MJXp-over {
+            display: inline-block !important;
+            text-align: center
+        }
+
+        .MJXp-over>* {
+            display: block !important
+        }
+
+        .MJXp-munderover>* {
+            display: table-row !important
+        }
+
+        .MJXp-mtable {
+            vertical-align: .25em;
+            margin: 0 .125em
+        }
+
+        .MJXp-mtable>* {
+            display: inline-table !important;
+            vertical-align: middle
+        }
+
+        .MJXp-mtr {
+            display: table-row !important
+        }
+
+        .MJXp-mtd {
+            display: table-cell !important;
+            text-align: center;
+            padding: .5em 0 0 .5em
+        }
+
+        .MJXp-mtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-mlabeledtr {
+            display: table-row !important
+        }
+
+        .MJXp-mlabeledtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mlabeledtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-merror {
+            background-color: #FFFF88;
+            color: #CC0000;
+            border: 1px solid #CC0000;
+            padding: 1px 3px;
+            font-style: normal;
+            font-size: 90%
+        }
+
+        .MJXp-scale0 {
+            -webkit-transform: scaleX(.0);
+            -moz-transform: scaleX(.0);
+            -ms-transform: scaleX(.0);
+            -o-transform: scaleX(.0);
+            transform: scaleX(.0)
+        }
+
+        .MJXp-scale1 {
+            -webkit-transform: scaleX(.1);
+            -moz-transform: scaleX(.1);
+            -ms-transform: scaleX(.1);
+            -o-transform: scaleX(.1);
+            transform: scaleX(.1)
+        }
+
+        .MJXp-scale2 {
+            -webkit-transform: scaleX(.2);
+            -moz-transform: scaleX(.2);
+            -ms-transform: scaleX(.2);
+            -o-transform: scaleX(.2);
+            transform: scaleX(.2)
+        }
+
+        .MJXp-scale3 {
+            -webkit-transform: scaleX(.3);
+            -moz-transform: scaleX(.3);
+            -ms-transform: scaleX(.3);
+            -o-transform: scaleX(.3);
+            transform: scaleX(.3)
+        }
+
+        .MJXp-scale4 {
+            -webkit-transform: scaleX(.4);
+            -moz-transform: scaleX(.4);
+            -ms-transform: scaleX(.4);
+            -o-transform: scaleX(.4);
+            transform: scaleX(.4)
+        }
+
+        .MJXp-scale5 {
+            -webkit-transform: scaleX(.5);
+            -moz-transform: scaleX(.5);
+            -ms-transform: scaleX(.5);
+            -o-transform: scaleX(.5);
+            transform: scaleX(.5)
+        }
+
+        .MJXp-scale6 {
+            -webkit-transform: scaleX(.6);
+            -moz-transform: scaleX(.6);
+            -ms-transform: scaleX(.6);
+            -o-transform: scaleX(.6);
+            transform: scaleX(.6)
+        }
+
+        .MJXp-scale7 {
+            -webkit-transform: scaleX(.7);
+            -moz-transform: scaleX(.7);
+            -ms-transform: scaleX(.7);
+            -o-transform: scaleX(.7);
+            transform: scaleX(.7)
+        }
+
+        .MJXp-scale8 {
+            -webkit-transform: scaleX(.8);
+            -moz-transform: scaleX(.8);
+            -ms-transform: scaleX(.8);
+            -o-transform: scaleX(.8);
+            transform: scaleX(.8)
+        }
+
+        .MJXp-scale9 {
+            -webkit-transform: scaleX(.9);
+            -moz-transform: scaleX(.9);
+            -ms-transform: scaleX(.9);
+            -o-transform: scaleX(.9);
+            transform: scaleX(.9)
+        }
+
+        .MathJax_PHTML .noError {
+            vertical-align: ;
+            font-size: 90%;
+            text-align: left;
+            color: black;
+            padding: 1px 3px;
+            border: 1px solid
+        }
+    </style>
+</head>
+
+<body>
+    <div id="MathJax_Message" style="display: none;"></div>
+    <!--[if lt IE 9]><div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav"> <button class="hidden" count="0">
+                        <div class="navicon"></div>
+                    </button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a
+                                href="https://alanz.info/">About me</a></li>
+                        <li class="masthead__menu-item"><a href="https://alanz.info/#research">Research</a></li>
+                        <li class="masthead__menu-item"><a href="https://alanz.info/#hobby">Open Source</a></li>
+                        <li class="masthead__menu-item"><a href="https://alanz.info/#resume">Resume</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="main" role="main">
+        <div class="sidebar sticky">
+            <div itemscope="" itemtype="http://schema.org/Person">
+                <div class="author__avatar"> <img
+                        src="./alkaidmount_files/profile.png"
+                        class="author__avatar" alt="Alan (Jialiang) Zhao"></div>
+                <div class="author__content">
+                    <h3 class="author__name">Alan (Jialiang) Zhao</h3>
+                    <p class="author__bio">PhD candidate, MIT CSAIL</p>
+                </div>
+                <div class="author__urls-wrapper"> <button class="btn btn--inverse">Follow</button>
+                    <ul class="author__urls social-icons">
+                        <li><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> alanzhao at csail.mit.edu</li>
+                        <!-- li><a href="mailto:alanzhao at csail.mit.edu"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li -->
+                        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Cambridge, Massachusetts, USA</li>
+                        <li><a href="https://www.linkedin.com/in/jialiang-zhao"><i class="fab fa-fw fa-linkedin"
+                                    aria-hidden="true"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/alanzjl"><i class="fab fa-fw fa-github" aria-hidden="true"></i>
+                                Github</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=LaW7igYAAAAJ&amp;hl=en"><i
+                                    class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="headline" content="DIY equatorial mount with HarmonicDrive">
+            <meta itemprop="description"
+                content="Final Update Oct. 2022The mount is finally finished! The finished assembly weights ~16lbs.I tested it with a ~15lbs unbalanced setup and a ~25lbs balanced setup and it worked beautifully.All design files are released on GitHub.The building process was documented here, as well as on Youtube and BiliBili.After getting trapped deeper and deeper into this hobby I finally started looking at my mount and thinking about replacing it… (Sirius EQ-G and I’ve only been in this hobby for 3 months!) I really appreciate the EQ-G’s relatively light weight and fear that a heavier mount might destroy my enthusiasm.As a mechanical engineer (well not really, I really work more on control/learning stuff:) what can be more fun than building one by myself? So I ordered two HDs off eBay for ~&amp;dollar 1400 (the same model sells for ~ &amp;dollar 1.3k new each).What is HarmonicDrive and why using it?HDs, or more accurately speaking, strain wave gearing, is a kind of gearing mechanism that generates much more torque than other common gearing (because it has much more teeth engaged at a time), while having basically zero backlash (because it utilizes deformation - kind of similar to belts which are believed to be more or less backlash-less but HDs use deformable spring metal which is better than belts even if they are filled with steel) - or, tldr: it can drive much heavier load WITHOUT the need of counterweights!Here is a nice GIF of how strain wave gearing worksand here is a youtube video from HarmonicDrive that tells more details(07/04) DesignI have mostly finished the drawing of the metal backbone.Most of the parts will be made with 1/4” and 3/8” 6061 aluminum alloy.I’m trying to make the design such that I can waterjet as many parts as possible - I do have access to several really good Haas CNC machines at MIT, but I’m not sure if it’s totally okay if I use them for my DIY projects (however, according to the lab manager: “technically what you make here should be for your research but what you do is none of my business” plus a wink.)The current design is all waterjet-able except the dovetail clamp.Hopefully I’ll be free enough next week to start making some chips! (well not really, since they will mostly be waterjetted:)(07/07) PCBI finally finished the PCB design, and sent it to JLCPCB to manufacture… It was based on the design of the MiniPCB2 from OnStep, however even the MiniPCB has a “Mini” in its name, it’s still too big.My design has two TMC2130 stepper drivers, one PEC (Periodic Error Correction) switch connector, two extra endstop switches, a RJ11 (6 pin telescope port) connector for a hand controller.The microcontroller is a Teensy 4.0.Should be sufficiently fast.It doesn’t have a WiFi module built in but I put a connector there in case I decide to add one in the future - but I really can’t think of a reason for it now.Updated 07/15The PCB arrived!It only took the manufacture in China less than 24hrs to manufacture this PCB, and DHL shipped it to my doorsteps in 2 business days plus a weekend.That’s impressive.This is how it looks now after the soldering is done.I did a test with both motors connected and it worked flawlessly.Good job OnStep!3D Printed ShellsHere is my first attempt to design a shell for my mount’s skeleton - well I admit it’s a bit ugly…Too boxy, I guess.You can see the housing for the PCB on the RA axis.Everything weights about 5.5kg now - 4 kg for the sheleton plus motors plus gears, 1 kg for bolts (lol), and the rest for the 4mm shells printed with ABS.Waterjet first attemptOkay I admit this is actually my first time to use a waterjet - after I finished all the design that was built around waterjetting. Probably should have tested it before designing everything.Fortunately the result turns out to be very good.I’m very happy with the dimensional accuracy - the error is within 0.1mm.The only issue is that the cut is not 100% vertical.The bottom surface is about 0.1mm longer than the top surface on a 3/8” (or ~10mm) piece.Not good but not too bad. I’ll worry a bit about squareness but it should be fine since I have a lot of reinforcements.Removing the pieces and sanding the tabs are painful.Now I learned that one tab is really sufficient for a 10mm plate.Okay now that waterjetting works, I placed the order for almost everything.My new 1/4” aluminum plates should arrive next week.Tangent assemblyBecause waterjeting is only 2D, all the side holes need to be manually drilled and tapped. It took me some trial and error to find a balance between speed and efficiency. Here is the test assembly for the tangent (the base for the mount)It is not finished though.This is only a test assembly, and none of the screws are fastened (so you can see a lot of gaps).I’ll sand the surface and debur the edges after test assembling the entire mount.It turns out that the manually drilled side holes are accurate enough - one piece is slightly off and I need to make another one of it, but overall it’s pretty good.Waterjeting doneToday I finally finished waterjeting all the pieces - actually it didn’t take that long.I just really don’t enjoy staying in the waterjet room.This picture was taken before the tabs were sanded off.The next step will be drilling &amp; tapping side holes on them.Gonna be a lot of work for the weekend or next week:)Drilling, tapping, lathe, and millingAfter spending almost every night 5-8pm last week in the machine shop, all the manual work on the metal parts is done now.It turns out that the dovetail clamp took the most amount of time to machine. I need to cut off a big chunk with endmills and cut the dovetail slot (the triangle) very slowly.AssemblyFinally it’s the final assembly!Some screws are still on its way, and I haven’t 3D printed the shell and electronics compartment, so I’m only test fitting everything without tighten any screws.It turns out that I might have overengineered it…Both 3/8” and 1/4” alumiunm are stronger (and heavier) than I thought, and I don’t think I need all the screws and any of the L-shape supports to achieve enough rigidity. All the screws go in smoothly. I was worrying about the accuracy of those manually drilled side-holes, but they seem to be good enough.One last part to machine is the mount for a 20mm shaft which accepts the counterweights.Maybe I’ll also want the shaft itself to be machined from aluminum - but I have a 20mm carbon fiber tube at home and maybe I’ll just use that.First power on testingThis is exciting!Nothing exploded, so it’s good.Even better, everything seems to be working well - both motors, WiFi, ASCOM driver, web server…Final testingFor more details and results, checkout my youtube video.Tracking performanceI haven’t been able to rigorously test the mount and collect enough data.The mount also needs to be calibrated (collect many nights’ data to reduce periodic error).Boston is almost in winter now and it’s getting colder.I’ll add this section when I have the data.">
+            <meta itemprop="datePublished" content="July 01, 2022">
+            <div class="page__inner-wrap">
+                <header>
+                    <h1 class="page__title" itemprop="headline">DIY equatorial mount with HarmonicDrive</h1>
+                    <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 minute read</p>
+                    <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                            Published:</strong> <time datetime="2022-07-01T00:00:00-07:00">July 01, 2022</time></p>
+                </header>
+                <section class="page__content" itemprop="text">
+                    <hr>
+                    <h3 id="final-update-oct-2022">Final Update Oct. 2022</h3>
+                    <p>The mount is finally finished! The finished assembly weights ~16lbs. I tested it with a ~15lbs
+                        unbalanced setup and a ~25lbs balanced setup and it worked beautifully.</p>
+                    <p><img src="./alkaidmount_files/GIF.gif" alt="anim"></p>
+                    <p>All design files are released <a href="https://github.com/alanzjl/AlkaidMount">on GitHub</a>. The
+                        building process was documented here, as well as <a
+                            href="https://www.youtube.com/watch?v=k2GoMa2DpH8">on Youtube</a> and <a
+                            href="https://www.bilibili.com/video/BV1SR4y1X7bt/?share_source=copy_web&amp;vd_source=4d6f936f693563e28752aadac9dd326f">BiliBili</a>.
+                    </p>
+                    <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe
+                            src="./alkaidmount_files/k2GoMa2DpH8.html"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="" id="fitvid0"></iframe></div>
+                    <hr>
+                    <p>After getting trapped deeper and deeper into this hobby I finally started looking at my mount and
+                        thinking about replacing it… (Sirius EQ-G and I’ve only been in this hobby for 3 months!) I
+                        really appreciate the EQ-G’s relatively light weight and fear that a heavier mount might destroy
+                        my enthusiasm.</p>
+                    <p>As a mechanical engineer (well not really, I really work more on control/learning stuff:) what
+                        can be more fun than building one by myself? So I ordered two HDs off eBay for ~&amp;dollar 1400
+                        (the same model sells for ~ &amp;dollar 1.3k new each).</p>
+                    <h2 id="what-is-harmonicdrive-and-why-using-it">What is HarmonicDrive and why using it?</h2>
+                    <p>HDs, or more accurately speaking, strain wave gearing, is a kind of gearing mechanism that
+                        generates much more torque than other common gearing (because it has much more teeth engaged at
+                        a time), while having basically zero backlash (because it utilizes deformation - kind of similar
+                        to belts which are believed to be more or less backlash-less but HDs use deformable spring metal
+                        which is better than belts even if they are filled with steel) - or, tldr: it can drive much
+                        heavier load WITHOUT the need of counterweights!</p>
+                    <p>Here is a nice GIF of how strain wave gearing works</p>
+                    <p><img src="./alkaidmount_files/HarmonicDriveAni.gif"
+                            alt="strain_wave"></p>
+                    <p>and here is a youtube video from HarmonicDrive that tells more details</p>
+                    <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe
+                            src="./alkaidmount_files/nj1vO3cP7ug.html"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="" id="fitvid1"></iframe></div>
+                    <h2 id="0704-design">(07/04) Design</h2>
+                    <p>I have mostly finished the drawing of the metal backbone. Most of the parts will be made with
+                        1/4” and 3/8” 6061 aluminum alloy. I’m trying to make the design such that I can waterjet as
+                        many parts as possible - I do have access to several really good Haas CNC machines at MIT, but
+                        I’m not sure if it’s totally okay if I use them for my DIY projects (however, according to the
+                        lab manager: “technically what you make here should be for your research but what you do is none
+                        of my business” plus a wink.) The current design is all waterjet-able except the dovetail clamp.
+                    </p>
+                    <p><img src="./alkaidmount_files/design1.jpeg" alt="design1">
+                    </p>
+                    <p><img src="./alkaidmount_files/design2.jpeg" alt="design2">
+                    </p>
+                    <p>Hopefully I’ll be free enough next week to start making some chips! (well not really, since they
+                        will mostly be waterjetted:)</p>
+                    <h2 id="0707-pcb">(07/07) PCB</h2>
+                    <p>I finally finished the PCB design, and sent it to JLCPCB to manufacture… It was based on the
+                        design of the MiniPCB2 from OnStep, however even the MiniPCB has a “Mini” in its name, it’s
+                        still too big. My design has two TMC2130 stepper drivers, one PEC (Periodic Error Correction)
+                        switch connector, two extra endstop switches, a RJ11 (6 pin telescope port) connector for a hand
+                        controller. The microcontroller is a Teensy 4.0. Should be sufficiently fast. It doesn’t have a
+                        WiFi module built in but I put a connector there in case I decide to add one in the future - but
+                        I really can’t think of a reason for it now. <img
+                            src="./alkaidmount_files/pcb.PNG" alt="pcb"></p>
+                    <h3 id="updated-0715">Updated 07/15</h3>
+                    <p>The PCB arrived! It only took the manufacture in China less than 24hrs to manufacture this PCB,
+                        and DHL shipped it to my doorsteps in 2 business days plus a weekend. That’s impressive. This is
+                        how it looks now after the soldering is done. <img
+                            src="./alkaidmount_files/pcb1.jpeg" alt="pcb1"></p>
+                    <p><img src="./alkaidmount_files/pcb2.jpeg" alt="pcb2"></p>
+                    <p>I did a test with both motors connected and it worked flawlessly. Good job OnStep!</p>
+                    <h2 id="3d-printed-shells">3D Printed Shells</h2>
+                    <p>Here is my first attempt to design a shell for my mount’s skeleton - well I admit it’s a bit
+                        ugly… Too boxy, I guess. You can see the housing for the PCB on the RA axis.</p>
+                    <p><img src="./alkaidmount_files/shell.jpg" alt="shell"></p>
+                    <p>Everything weights about 5.5kg now - 4 kg for the sheleton plus motors plus gears, 1 kg for bolts
+                        (lol), and the rest for the 4mm shells printed with ABS.</p>
+                    <h2 id="waterjet-first-attempt">Waterjet first attempt</h2>
+                    <p>Okay I admit this is actually my first time to use a waterjet - after I finished all the design
+                        that was built around waterjetting. Probably should have tested it before designing everything.
+                        Fortunately the result turns out to be very good. I’m very happy with the dimensional accuracy -
+                        the error is within 0.1mm. The only issue is that the cut is not 100% vertical. The bottom
+                        surface is about 0.1mm longer than the top surface on a 3/8” (or ~10mm) piece. Not good but not
+                        too bad. I’ll worry a bit about squareness but it should be fine since I have a lot of
+                        reinforcements.</p>
+                    <p><img src="./alkaidmount_files/waterjet3.jpeg" alt="wj3">
+                    </p>
+                    <p><img src="./alkaidmount_files/waterjet2.jpeg" alt="wj2">
+                    </p>
+                    <p>Removing the pieces and sanding the tabs are painful. Now I learned that one tab is really
+                        sufficient for a 10mm plate.</p>
+                    <p><img src="./alkaidmount_files/waterjet1.jpeg" alt="wj1">
+                    </p>
+                    <p>Okay now that waterjetting works, I placed the order for almost everything. My new 1/4” aluminum
+                        plates should arrive next week.</p>
+                    <h2 id="tangent-assembly">Tangent assembly</h2>
+                    <p>Because waterjeting is only 2D, all the side holes need to be manually drilled and tapped. It
+                        took me some trial and error to find a balance between speed and efficiency. Here is the test
+                        assembly for the tangent (the base for the mount) <img
+                            src="./alkaidmount_files/b1.jpeg" alt="tangent1">
+                        <img src="./alkaidmount_files/b2.jpeg" alt="tangent2">
+                        <img src="./alkaidmount_files/b3.jpeg" alt="tangent3">
+                    </p>
+                    <p>It is not finished though. This is only a test assembly, and none of the screws are fastened (so
+                        you can see a lot of gaps). I’ll sand the surface and debur the edges after test assembling the
+                        entire mount.</p>
+                    <p>It turns out that the manually drilled side holes are accurate enough - one piece is slightly off
+                        and I need to make another one of it, but overall it’s pretty good.</p>
+                    <h2 id="waterjeting-done">Waterjeting done</h2>
+                    <p>Today I finally finished waterjeting all the pieces - actually it didn’t take that long. I just
+                        really don’t enjoy staying in the waterjet room. <img
+                            src="./alkaidmount_files/w2.jpeg" alt="waterjet_all">
+                        This picture was taken before the tabs were sanded off. The next step will be drilling &amp;
+                        tapping side holes on them. Gonna be a lot of work for the weekend or next week:)</p>
+                    <h2 id="drilling-tapping-lathe-and-milling">Drilling, tapping, lathe, and milling</h2>
+                    <p>After spending almost every night 5-8pm last week in the machine shop, all the manual work on the
+                        metal parts is done now. <img
+                            src="./alkaidmount_files/all_metal.jpeg"
+                            alt="all_metal"></p>
+                    <p>It turns out that the dovetail clamp took the most amount of time to machine. I need to cut off a
+                        big chunk with endmills and cut the dovetail slot (the triangle) very slowly.</p>
+                    <p><img src="./alkaidmount_files/dovetail1.jpeg"
+                            alt="dovetail1"> <img
+                            src="./alkaidmount_files/dovetail2.jpeg"
+                            alt="dovetail2"></p>
+                    <h2 id="assembly">Assembly</h2>
+                    <p>Finally it’s the final assembly! Some screws are still on its way, and I haven’t 3D printed the
+                        shell and electronics compartment, so I’m only test fitting everything without tighten any
+                        screws.</p>
+                    <p><img src="./alkaidmount_files/test_fit.jpeg"
+                            alt="test_fit"></p>
+                    <p>It turns out that I might have overengineered it… Both 3/8” and 1/4” alumiunm are stronger (and
+                        heavier) than I thought, and I don’t think I need all the screws and any of the L-shape supports
+                        to achieve enough rigidity. All the screws go in smoothly. I was worrying about the accuracy of
+                        those manually drilled side-holes, but they seem to be good enough.</p>
+                    <p>One last part to machine is the mount for a 20mm shaft which accepts the counterweights. Maybe
+                        I’ll also want the shaft itself to be machined from aluminum - but I have a 20mm carbon fiber
+                        tube at home and maybe I’ll just use that.</p>
+                    <h2 id="first-power-on-testing">First power on testing</h2>
+                    <p>This is exciting! Nothing exploded, so it’s good. Even better, everything seems to be working
+                        well - both motors, WiFi, ASCOM driver, web server…</p>
+                    <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe
+                            src="./alkaidmount_files/JVjg8sP4d-s.html"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="" id="fitvid2"></iframe></div>
+                    <h2 id="final-testing">Final testing</h2>
+                    <p><img src="./alkaidmount_files/finished1.jpg"
+                            alt="finished1"> <img
+                            src="./alkaidmount_files/finished2.jpg"
+                            alt="finished2"> <img
+                            src="./alkaidmount_files/finished3.jpg"
+                            alt="finished3"> <img
+                            src="./alkaidmount_files/testing.jpg" alt="testing">
+                    </p>
+                    <p>For more details and results, checkout my <a
+                            href="https://www.youtube.com/watch?v=k2GoMa2DpH8">youtube video</a>.</p>
+                    <h2 id="tracking-performance">Tracking performance</h2>
+                    <p>I haven’t been able to rigorously test the mount and collect enough data. The mount also needs to
+                        be calibrated (collect many nights’ data to reduce periodic error). Boston is almost in winter
+                        now and it’s getting colder. I’ll add this section when I have the data.</p>
+                </section>
+                <footer class="page__meta">
+                    <p class="page__taxonomy"> <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags:
+                        </strong> <span itemprop="keywords"> <a href="https://alanz.info/tags/#astronomy"
+                                class="page__taxonomy-item" rel="tag">Astronomy</a><span class="sep">, </span> <a
+                                href="https://alanz.info/tags/#diy" class="page__taxonomy-item"
+                                rel="tag">DIY</a><span class="sep">, </span> <a
+                                href="https://alanz.info/tags/#robotics" class="page__taxonomy-item"
+                                rel="tag">Robotics</a> </span></p>
+                </footer>
+                <section class="page__share">
+                    <h4 class="page__share-title">Share on</h4><a
+                        href="https://twitter.com/intent/tweet?text=https://alanz.info/posts/2022/07/diy-mount/"
+                        class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter"
+                            aria-hidden="true"></i><span> Twitter</span></a> <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://alanz.info/posts/2022/07/diy-mount/"
+                        class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook"
+                            aria-hidden="true"></i><span> Facebook</span></a> <a
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://alanz.info/posts/2022/07/diy-mount/"
+                        class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin"
+                            aria-hidden="true"></i><span> LinkedIn</span></a>
+                </section>
+            </div>
+        </article>
+    </div>
+    <div class="page__footer">
+        <footer> <!-- start custom footer snippets --> <a href="https://alanz.info/sitemap/">Sitemap</a>
+            <!-- end custom footer snippets -->
+            <div class="page__footer-follow">
+                <ul class="social-icons">
+                    <li><strong>Follow:</strong></li>
+                    <li><a href="http://github.com/alanzjl"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                    </li>
+                    <li><a href="https://alanz.info/feed.xml"><i class="fa fa-fw fa-rss-square"
+                                aria-hidden="true"></i> Feed</a></li>
+                </ul>
+            </div>
+            <div class="page__footer-copyright">© 2023 Alan (Jialiang) Zhao. Powered by <a href="http://jekyllrb.com/"
+                    rel="nofollow">Jekyll</a> &amp; <a
+                    href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a
+                    href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal
+                    Mistakes</a>.</div>
+        </footer>
+    </div>
+    <script src="./alkaidmount_files/main.min.js"></script>
+    <script> (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', '', 'auto'); ga('send', 'pageview'); </script>
+</body>
+
+</html>
