@@ -1,6 +1,5 @@
 html {
     font-family: "Exo", sans-serif;
-    /* font-family:  sans-serif; */
 }
 
 
@@ -19,7 +18,8 @@ html {
 }
 
 #name h1{
-    font-family: "Delius", sans-serif;
+    /* font-family: "Delius", sans-serif; */
+    font-weight: 200;
     color: #354f52;
     font-size: 2.5em;
     transition: font-size 0.25s ease-in-out;
