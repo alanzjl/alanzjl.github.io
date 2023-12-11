@@ -2,7 +2,11 @@ body {
     font-family: 'Exo', sans-serif;
 }
 
-
+.location {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: #354f52;
+}
 #profilePicture {
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
