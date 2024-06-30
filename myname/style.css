@@ -109,3 +109,10 @@ h1 img{
     font-size: 4rem;
     height: 5rem;
 }
+
+figure {
+    position: absolute;
+    right: 4vw;
+    top: 5vh;
+    margin: 0;
+}
