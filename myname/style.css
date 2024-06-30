@@ -1,0 +1,102 @@
+body {
+    font-family: 'VT323', monospace;
+    background-color: #E0E2DB;
+    color: #5F7470;
+}
+
+a {
+    color: #889696;
+}
+
+p {
+    text-align: center;
+}
+
+.cn {
+    font-family: 'qingniao', serif;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 7rem;
+}
+
+.char {
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.char:hover {
+    color: #889696;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.return {
+    position: absolute;
+    left: 4vw;
+    top: 5vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #B8BDB5;
+}
+
+.details {
+    position: absolute;
+    bottom: 1.5rem;
+    top: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+
+.details-tab {
+    opacity: 1;
+    transition: opacity 0.3s 0.3s;
+    position: absolute;
+    top: 0;
+    width: 60%;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.alternatives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.alternative {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+img {
+    height: 5rem;
+}
+
+.morden-type {
+    font-family: 'kai', serif;
+    font-size: 4rem;
+    height: 5rem;
+}
