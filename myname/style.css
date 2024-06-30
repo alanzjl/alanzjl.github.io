@@ -16,11 +16,12 @@ p {
     font-family: 'qingniao', serif;
 }
 
-.section {
+.main {
+    position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 }
 
@@ -58,7 +59,7 @@ p {
 .details {
     position: absolute;
     bottom: 1.5rem;
-    top: 60vh;
+    top: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
