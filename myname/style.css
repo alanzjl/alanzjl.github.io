@@ -16,6 +16,14 @@ p {
     font-family: 'qingniao', serif;
 }
 
+.kai {
+    font-family: 'kai', serif;
+}
+
+h1 img{
+    height: 8rem;
+}
+
 .main {
     position: absolute;
     width: 100%;
@@ -92,7 +100,7 @@ p {
     margin: 0 1rem;
 }
 
-img {
+.details img {
     height: 5rem;
 }
 
