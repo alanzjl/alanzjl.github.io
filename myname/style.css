@@ -13,7 +13,7 @@ p {
 }
 
 .cn {
-    font-family: 'qingniao', serif;
+    font-family: 'kai', serif;
 }
 
 .kai {
@@ -40,6 +40,8 @@ h1 img{
 .char {
     display: inline-block;
     transition: all 0.3s;
+    font-family: 'kai', serif;
+    margin: 0 1rem;
 }
 
 .char:hover {
@@ -104,10 +106,11 @@ h1 img{
     height: 5rem;
 }
 
-.morden-type {
+.modern-type {
     font-family: 'kai', serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     height: 5rem;
+    padding-bottom: 0.5rem;
 }
 
 figure {
