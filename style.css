@@ -168,3 +168,8 @@ a {
     font-weight: 100;
     font-size: 1rem;
 }
+
+.authors {
+    font-style: italic;
+    font-size: 0.8rem;
+}
