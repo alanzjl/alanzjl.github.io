@@ -173,3 +173,7 @@ a {
     font-style: italic;
     font-size: 0.8rem;
 }
+
+.emphasize {
+    font-weight: bold;
+}
