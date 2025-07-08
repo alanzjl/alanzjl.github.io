@@ -177,3 +177,22 @@ a {
 .emphasize {
     font-weight: bold;
 }
+
+/* Tooltip improvements for mobile */
+[data-bs-toggle="tooltip"] {
+    border-bottom: 1px dotted #84a98c;
+    cursor: help;
+}
+
+/* On touch devices, make it more obvious */
+@media (hover: none) and (pointer: coarse) {
+    [data-bs-toggle="tooltip"] {
+        border-bottom: 1px dotted #52796f;
+        text-decoration: none;
+        padding: 2px 0;
+    }
+    
+    [data-bs-toggle="tooltip"]:active {
+        background-color: rgba(132, 169, 140, 0.1);
+    }
+}

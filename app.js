@@ -1,3 +1,6 @@
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 window.onscroll = function() {scrollFunction()};
 var scolled = false;
 var lastScrollTop = 0;
