@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <!-- begin SEO -->
+    <title>DIY Equatorial Mount with HarmonicDrive - Alan (Jialiang) Zhao</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Alan (Jialiang) Zhao">
+    <meta property="og:title" content="DIY Equatorial Mount with HarmonicDrive">
+    <link rel="canonical" href="https://alanz.info/blog/alkaid-mount.html">
+    <meta property="og:url" content="https://alanz.info/blog/alkaid-mount.html">
+    <meta property="og:description" content="Building a precision equatorial mount for astrophotography using HarmonicDrive gearboxes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- end SEO -->
+    <style>
+        @font-face {
+            font-family: 'Exo';
+            src: url("../fonts/Exo-VariableFont_wght.ttf"), url("../fonts/Exo-Italic-VariableFont_wght.ttf");
+        }
+        @font-face {
+            font-family: 'kai';
+            src: url("../fonts/kai.ttf");
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .blog-header {
+            text-align: left;
+            padding: 2rem 0;
+            border-bottom: 1px solid #e9ecef;
+            margin-bottom: 2rem;
+        }
+        .blog-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        .blog-meta {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+        .blog-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+        }
+        .blog-content p {
+            margin-bottom: 1.5rem;
+        }
+        .blog-content h2 {
+            color: #2c3e50;
+            font-weight: 400;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .blog-content h3 {
+            color: #52796f;
+            font-weight: 400;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        .blog-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            display: block;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .back-link {
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        .back-link a {
+            color: #52796f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .back-link a:hover {
+            color: #2c3e50;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 2rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <div class="profile-section">
+                    <img src="../images/profile.jpg" alt="Alan Zhao" id="profilePicture" class="profile-picture">
+                    <h1 class="profile-name">Alan <span class="nickname">(Jialiang)</span> Zhao</h1>
+                    <a href="https://alanz.info/myname/index.html" class="chinese-name"><span class="cn-name" lang="zh-Hans">赵家樑</span></a>
+                    <p class="profile-title">Robotics and AI</p>
+                    <p class="profile-affiliation">1X Technologies & MIT CSAIL</p>
+                </div>
+                
+                <nav class="contact-links">
+                    <a class="contact-link" href="https://www.linkedin.com/in/jialiang-zhao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="contact-link" href="https://github.com/alanzjl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a class="contact-link" href="https://scholar.google.com/citations?user=LaW7igYAAAAJ&hl=en">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+                        </svg>
+                        <span>Scholar</span>
+                    </a>
+                    <a class="contact-link" href="mailto:alanzhao@csail.mit.edu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <div class="content-area">
+            <main class="main-content">
+                <div class="back-link">
+                    <a href="../index.html">← Back to Home</a>
+                </div>
+                
+                <article>
+                    <header class="blog-header">
+                        <h1 class="blog-title">DIY Equatorial Mount with HarmonicDrive</h1>
+                        <div class="blog-meta">July 1, 2022</div>
+                    </header>
+                    
+                    <div class="blog-content">
+                        <h3>Final Update Oct. 2022</h3>
+                        <p>The mount is finally finished! The finished assembly weighs ~16lbs. I tested it with a ~15lbs unbalanced setup and a ~25lbs balanced setup and it worked beautifully.</p>
+                        
+                        <img src="../images/research/alkaidmount.gif" alt="Alkaid Mount Animation">
+                        
+                        <p>All design files are released <a href="https://github.com/alanzjl/AlkaidMount">on GitHub</a>. The building process was documented here, as well as <a href="https://www.youtube.com/watch?v=k2GoMa2DpH8">on YouTube</a> and <a href="https://www.bilibili.com/video/BV1SR4y1X7bt/?share_source=copy_web&vd_source=4d6f936f693563e28752aadac9dd326f">BiliBili</a>.</p>
+                        
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/k2GoMa2DpH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                        <hr>
+                        
+                        <p>After getting trapped deeper and deeper into this hobby, I finally started looking at my mount and thinking about replacing it… (Sirius EQ-G and I've only been in this hobby for 3 months!) I really appreciate the EQ-G's relatively light weight and fear that a heavier mount might destroy my enthusiasm.</p>
+                        
+                        <p>As a mechanical engineer (well, not really—I work more on control/learning stuff), what could be more fun than building one by myself? So I ordered two HDs off eBay for ~$1400 (the same model sells for ~$1.3k new each).</p>
+                        
+                        <h2>What is HarmonicDrive and why use it?</h2>
+                        <p>HDs, or more accurately speaking, strain wave gearing, is a kind of gearing mechanism that generates much more torque than other common gearing (because it has many more teeth engaged at a time), while having basically zero backlash (because it utilizes deformation—kind of similar to belts which are believed to be more or less backlash-free, but HDs use deformable spring metal which is better than belts even if they are filled with steel). TL;DR: it can drive much heavier loads WITHOUT the need for counterweights!</p>
+                        
+                        <p>Here is a nice GIF of how strain wave gearing works:</p>
+                        <img src="../pages/alkaidmount_files/HarmonicDriveAni.gif" alt="Strain wave gearing animation">
+                        
+                        <p>And here is a YouTube video from HarmonicDrive that provides more details:</p>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/nj1vO3cP7ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                        <h2>(07/04) Design</h2>
+                        <p>I have mostly finished the drawing of the metal backbone. Most of the parts will be made with 1/4" and 3/8" 6061 aluminum alloy. I'm trying to make the design such that I can waterjet as many parts as possible. I do have access to several really good Haas CNC machines at MIT, but I'm not sure if it's totally okay if I use them for my DIY projects (however, according to the lab manager: "technically what you make here should be for your research, but what you do is none of my business," plus a wink). The current design is all waterjet-able except the dovetail clamp.</p>
+                        
+                        <img src="../pages/alkaidmount_files/design1.jpeg" alt="Design 1">
+                        <img src="../pages/alkaidmount_files/design2.jpeg" alt="Design 2">
+                        
+                        <p>Hopefully I'll be free enough next week to start making some chips! (Well, not really, since they will mostly be waterjetted.)</p>
+                        
+                        <h2>(07/07) PCB</h2>
+                        <p>I finally finished the PCB design and sent it to JLCPCB to manufacture. It was based on the design of the MiniPCB2 from OnStep; however, even though the MiniPCB has "Mini" in its name, it's still too big. My design has two TMC2130 stepper drivers, one PEC (Periodic Error Correction) switch connector, two extra endstop switches, and an RJ11 (6-pin telescope port) connector for a hand controller. The microcontroller is a Teensy 4.0, which should be sufficiently fast. It doesn't have a WiFi module built in, but I put a connector there in case I decide to add one in the future—but I really can't think of a reason for it now.</p>
+                        <img src="../pages/alkaidmount_files/pcb.PNG" alt="PCB design">
+                        
+                        <h3>Updated 07/15</h3>
+                        <p>The PCB arrived! It only took the manufacturer in China less than 24 hours to manufacture this PCB, and DHL shipped it to my doorstep in 2 business days plus a weekend. That's impressive. This is how it looks now after the soldering is done.</p>
+                        <img src="../pages/alkaidmount_files/pcb1.jpeg" alt="PCB assembled 1">
+                        <img src="../pages/alkaidmount_files/pcb2.jpeg" alt="PCB assembled 2">
+                        <p>I did a test with both motors connected and it worked flawlessly. Good job OnStep!</p>
+                        
+                        <h2>3D Printed Shells</h2>
+                        <p>Here is my first attempt to design a shell for my mount's skeleton—well, I admit it's a bit ugly… Too boxy, I guess. You can see the housing for the PCB on the RA axis.</p>
+                        <img src="../pages/alkaidmount_files/shell.jpg" alt="3D printed shell">
+                        <p>Everything weighs about 5.5kg now—4 kg for the skeleton plus motors plus gears, 1 kg for bolts (lol), and the rest for the 4mm shells printed with ABS.</p>
+                        
+                        <h2>Waterjet First Attempt</h2>
+                        <p>Okay, I admit this is actually my first time using a waterjet—after I finished all the design that was built around waterjetting. I probably should have tested it before designing everything. Fortunately, the result turns out to be very good. I'm very happy with the dimensional accuracy—the error is within 0.1mm. The only issue is that the cut is not 100% vertical. The bottom surface is about 0.1mm longer than the top surface on a 3/8" (or ~10mm) piece. Not good but not too bad. I'll worry a bit about squareness, but it should be fine since I have a lot of reinforcements.</p>
+                        
+                        <img src="../pages/alkaidmount_files/waterjet3.jpeg" alt="Waterjet result 3">
+                        <img src="../pages/alkaidmount_files/waterjet2.jpeg" alt="Waterjet result 2">
+                        
+                        <p>Removing the pieces and sanding the tabs are painful. Now I learned that one tab is really sufficient for a 10mm plate.</p>
+                        <img src="../pages/alkaidmount_files/waterjet1.jpeg" alt="Waterjet result 1">
+                        
+                        <p>Okay, now that waterjetting works, I placed the order for almost everything. My new 1/4" aluminum plates should arrive next week.</p>
+                        
+                        <h2>Tangent Assembly</h2>
+                        <p>Because waterjetting is only 2D, all the side holes need to be manually drilled and tapped. It took me some trial and error to find a balance between speed and efficiency. Here is the test assembly for the tangent (the base for the mount):</p>
+                        <img src="../pages/alkaidmount_files/b1.jpeg" alt="Tangent assembly 1">
+                        <img src="../pages/alkaidmount_files/b2.jpeg" alt="Tangent assembly 2">
+                        <img src="../pages/alkaidmount_files/b3.jpeg" alt="Tangent assembly 3">
+                        
+                        <p>It is not finished though. This is only a test assembly, and none of the screws are fastened (so you can see a lot of gaps). I'll sand the surface and deburr the edges after test assembling the entire mount.</p>
+                        
+                        <p>It turns out that the manually drilled side holes are accurate enough—one piece is slightly off and I need to make another one, but overall it's pretty good.</p>
+                        
+                        <h2>Waterjetting Done</h2>
+                        <p>Today I finally finished waterjeting all the pieces—actually, it didn't take that long. I just really don't enjoy staying in the waterjet room.</p>
+                        <img src="../pages/alkaidmount_files/w2.jpeg" alt="All waterjet pieces">
+                        <p>This picture was taken before the tabs were sanded off. The next step will be drilling & tapping side holes on them. It's going to be a lot of work for the weekend or next week!</p>
+                        
+                        <h2>Drilling, Tapping, Lathe, and Milling</h2>
+                        <p>After spending almost every night from 5-8pm last week in the machine shop, all the manual work on the metal parts is done now.</p>
+                        <img src="../pages/alkaidmount_files/all_metal.jpeg" alt="All metal parts">
+                        
+                        <p>It turns out that the dovetail clamp took the most time to machine. I needed to cut off a big chunk with endmills and cut the dovetail slot (the triangle) very slowly.</p>
+                        <img src="../pages/alkaidmount_files/dovetail1.jpeg" alt="Dovetail machining 1">
+                        <img src="../pages/alkaidmount_files/dovetail2.jpeg" alt="Dovetail machining 2">
+                        
+                        <h2>Assembly</h2>
+                        <p>Finally, it's the final assembly! Some screws are still on their way, and I haven't 3D printed the shell and electronics compartment, so I'm only test fitting everything without tightening any screws.</p>
+                        <img src="../pages/alkaidmount_files/test_fit.jpeg" alt="Test fit assembly">
+                        
+                        <p>It turns out that I might have overengineered it… Both 3/8" and 1/4" aluminum are stronger (and heavier) than I thought, and I don't think I need all the screws and any of the L-shaped supports to achieve enough rigidity. All the screws go in smoothly. I was worrying about the accuracy of those manually drilled side holes, but they seem to be good enough.</p>
+                        
+                        <p>One last part to machine is the mount for a 20mm shaft which accepts the counterweights. Maybe I'll also want the shaft itself to be machined from aluminum - but I have a 20mm carbon fiber tube at home and maybe I'll just use that.</p>
+                        
+                        <h2>First Power-On Testing</h2>
+                        <p>This is exciting! Nothing exploded, so it's good. Even better, everything seems to be working well - both motors, WiFi, ASCOM driver, web server…</p>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/JVjg8sP4d-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                        <h2>Final Testing</h2>
+                        <img src="../pages/alkaidmount_files/finished1.jpg" alt="Finished mount 1">
+                        <img src="../pages/alkaidmount_files/finished2.jpg" alt="Finished mount 2">
+                        <img src="../pages/alkaidmount_files/finished3.jpg" alt="Finished mount 3">
+                        <img src="../pages/alkaidmount_files/testing.jpg" alt="Testing the mount">
+                        
+                        <p>For more details and results, check out my <a href="https://www.youtube.com/watch?v=k2GoMa2DpH8">YouTube video</a>.</p>
+                        
+                        <h2>Tracking Performance</h2>
+                        <p>I haven't been able to rigorously test the mount and collect enough data. The mount also needs to be calibrated (collect many nights' data to reduce periodic error). Boston is almost in winter now and it's getting colder. I'll add this section when I have the data.</p>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        2025 By Alan (Jialiang) Zhao
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+
+</html>
