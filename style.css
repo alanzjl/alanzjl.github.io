@@ -96,7 +96,7 @@ body {
 
 .cn-name {
     font-family: 'kai', times;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #52796f;
 }
 
@@ -439,6 +439,29 @@ html {
 .card-img-top {
     height: 200px;
     object-fit: cover;
+}
+
+/* Build Tab Card Enhancements */
+#build .card {
+    height: 100%;
+}
+
+#build .card-body {
+    padding: 1.5rem;
+}
+
+#build .card-text {
+    margin-bottom: 1rem;
+}
+
+#build .paper-title {
+    min-height: auto;
+    margin-bottom: 1rem;
+}
+
+#build .links {
+    margin-top: auto;
+    padding-top: 1rem;
 }
 
 .research-block {

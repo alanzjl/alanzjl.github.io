@@ -1,0 +1,13 @@
+# Robots.txt for alanz.info
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+Disallow: /fonts/
+Disallow: *.pdf$
+
+# Sitemap location
+Sitemap: https://alanz.info/sitemap.xml
+
+# Crawl-delay for considerate crawling
+Crawl-delay: 1

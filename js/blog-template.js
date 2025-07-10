@@ -1,0 +1,137 @@
+// Blog template helper
+const blogTemplate = {
+    // Generate a complete blog page
+    createBlogPage: function(config) {
+        const {
+            title,
+            date,
+            content,
+            canonical
+        } = config;
+
+        return `<!DOCTYPE html>
+<html>
+<head>
+    ${components.getCommonHead(
+        `${title} - Alan (Jialiang) Zhao`,
+        title,
+        canonical,
+        '../'
+    )}
+    <style>
+        .blog-header {
+            text-align: left;
+            padding: 2rem 0;
+            border-bottom: 1px solid #e9ecef;
+            margin-bottom: 2rem;
+        }
+        .blog-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        .blog-meta {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+        .blog-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+        }
+        .blog-content p {
+            margin-bottom: 1.5rem;
+        }
+        .blog-content h2 {
+            color: #2c3e50;
+            font-weight: 400;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .blog-content h3 {
+            color: #52796f;
+            font-weight: 400;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        .blog-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            display: block;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .back-link {
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        .back-link a {
+            color: #52796f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .back-link a:hover {
+            color: #2c3e50;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 2rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body data-path-prefix="../">
+    <div class="main-container">
+        <!-- Sidebar will be injected here -->
+        <div id="sidebar-container"></div>
+        
+        <!-- Main Content Area -->
+        <div class="content-area">
+            <main class="main-content">
+                <div class="back-link">
+                    <a href="../index.html">← Back to Home</a>
+                </div>
+                
+                <article>
+                    <header class="blog-header">
+                        <h1 class="blog-title">${title}</h1>
+                        <div class="blog-meta">${date}</div>
+                    </header>
+                    
+                    <div class="blog-content">
+                        ${content}
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer will be injected here -->
+    <div id="footer-container"></div>
+
+    <script src="../js/components.js"></script>
+    ${components.getCommonScripts()}
+</body>
+</html>`;
+    }
+};
