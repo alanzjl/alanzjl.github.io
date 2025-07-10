@@ -6,7 +6,7 @@ const components = {
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-content">
                 <div class="profile-section">
-                    <img src="${pathPrefix}images/profile.jpg" alt="Alan Zhao" id="profilePicture" class="profile-picture">
+                    <img src="${pathPrefix}images/profile.jpg" alt="Alan Zhao" id="profilePicture" class="profile-picture" loading="lazy">
                     <h1 class="profile-name">Alan <span class="nickname">(Jialiang)</span> Zhao</h1>
                     <a href="https://alanz.info/myname/index.html" class="chinese-name"><span class="cn-name" lang="zh-Hans">赵家樑</span></a>
                     <p class="profile-title">Robotics and AI</p>
