@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fafafa;
-    color: #2c3e50;
+    color: #3a2f2a;
     line-height: 1.6;
 }
 
@@ -20,7 +20,7 @@ body {
 /* Sidebar Styles */
 .sidebar {
     width: 400px;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #3d2b22 0%, #4a3428 100%);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
     position: fixed;
     height: 100vh;
@@ -67,7 +67,7 @@ body {
 .profile-name {
     font-size: 2.2rem;
     font-weight: 300;
-    color: #2c3e50;
+    color: #f5eee7;
     margin: 0 0 0.5rem 0;
     letter-spacing: 0.02em;
 }
@@ -80,7 +80,7 @@ body {
 
 .nickname {
     font-size: 0.9em;
-    color: #7f8c8d;
+    color: #d9c6b8;
 }
 
 .chinese-name {
@@ -97,19 +97,19 @@ body {
 .cn-name {
     font-family: 'kai', times;
     font-size: 2rem;
-    color: #52796f;
+    color: #f0c59a;
 }
 
 .profile-title {
     font-size: 1.1rem;
-    color: #52796f;
+    color: #f0c59a;
     margin: 0.5rem 0;
     font-weight: 300;
 }
 
 .profile-affiliation {
     font-size: 0.95rem;
-    color: #7f8c8d;
+    color: #d9c6b8;
     margin: 0 0 2rem 0;
     font-weight: 300;
 }
@@ -126,20 +126,20 @@ body {
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem 1.5rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.92);
     border-radius: 12px;
     text-decoration: none;
-    color: #52796f;
+    color: #9c5a3c;
     font-weight: 300;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .contact-link:hover {
-    background: #84a98c;
+    background: #c98252;
     color: white;
     transform: translateX(5px);
-    box-shadow: 0 4px 12px rgba(132, 169, 140, 0.3);
+    box-shadow: 0 4px 12px rgba(201, 130, 82, 0.35);
 }
 
 .contact-link svg {
@@ -184,22 +184,22 @@ body {
 .location {
     font-size: 0.8rem;
     font-weight: 200;
-    color: #7f8c8d;
+    color: #8a7a6d;
 }
 
 .greeting {
-    color: #2c3e50;
+    color: #3a2f2a;
     font-weight: 300;
     margin-bottom: 1.5rem;
 }
 
 .date {
-    color: #52796f;
+    color: #9c5a3c;
     font-weight: 400;
 }
 
 .section-names {
-    color: #2c3e50;
+    color: #3a2f2a;
     font-weight: 200;
     letter-spacing: 0.05em;
     font-size: 2.5rem;
@@ -217,7 +217,7 @@ body {
     transform: translateX(-50%);
     width: 180px;
     height: 3px;
-    background: linear-gradient(90deg, #84a98c 0%, #52796f 100%);
+    background: linear-gradient(90deg, #d19a66 0%, #9c5a3c 100%);
     border-radius: 2px;
 }
 /* .main-intro {
@@ -238,20 +238,20 @@ body {
 
 .paper-title {
     font-weight: 500;
-    color: #2c3e50;
+    color: #3a2f2a;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     line-height: 1.4;
 }
 
 a {
-    color: #84a98c;
+    color: #d19a66;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #52796f;
+    color: #9c5a3c;
     text-decoration: underline;
 }
 
@@ -269,14 +269,14 @@ a:hover {
 .me {
     font-weight: 600;
     font-style: normal;
-    color: #2c3e50;
-    background: linear-gradient(120deg, rgba(132, 169, 140, 0.1) 0%, rgba(82, 121, 111, 0.1) 100%);
+    color: #3a2f2a;
+    background: rgba(209, 154, 102, 0.15);
     padding: 0.1rem 0.3rem;
     border-radius: 4px;
 }
 
 .more-paper {
-    color: #52796f;
+    color: #9c5a3c;
     font-weight: 200;
     font-style: italic;
 }
@@ -286,7 +286,7 @@ a:hover {
     text-align: center;
     font-weight: 300;
     font-size: 0.9rem;
-    color: #7f8c8d;
+    color: #8a7a6d;
     padding: 2rem 0;
     margin-top: 4rem;
     border-top: 1px solid #e9ecef;
@@ -303,14 +303,14 @@ a:hover {
 
 /* Tooltip improvements */
 [data-bs-toggle="tooltip"] {
-    border-bottom: 1px dotted #84a98c;
+    border-bottom: 1px dotted #d19a66;
     cursor: help;
     transition: all 0.3s ease;
 }
 
 [data-bs-toggle="tooltip"]:hover {
-    border-bottom-color: #52796f;
-    color: #52796f;
+    border-bottom-color: #9c5a3c;
+    color: #9c5a3c;
 }
 
 /* Smooth scrolling */
@@ -320,8 +320,8 @@ html {
 
 /* Selection color */
 ::selection {
-    background: rgba(132, 169, 140, 0.2);
-    color: #2c3e50;
+    background: rgba(209, 154, 102, 0.25);
+    color: #3a2f2a;
 }
 
 /* Custom scrollbar for sidebar */
@@ -330,16 +330,16 @@ html {
 }
 
 .sidebar::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background: #84a98c;
+    background: #d19a66;
     border-radius: 3px;
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-    background: #52796f;
+    background: #9c5a3c;
 }
 
 /* Tab navigation styling */
@@ -354,7 +354,7 @@ html {
 }
 
 #mainTabs .nav-link {
-    color: #52796f;
+    color: #9c5a3c;
     font-weight: 400;
     font-size: 1rem;
     border: none;
@@ -365,12 +365,12 @@ html {
 }
 
 #mainTabs .nav-link:hover {
-    color: #2c3e50;
+    color: #3a2f2a;
     background: rgba(255, 255, 255, 0.8);
 }
 
 #mainTabs .nav-link.active {
-    color: #2c3e50;
+    color: #3a2f2a;
     font-weight: 500;
     background: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -402,7 +402,7 @@ html {
 .blog-post-title {
     font-size: 1.4rem;
     font-weight: 500;
-    color: #2c3e50;
+    color: #3a2f2a;
     margin-bottom: 0.5rem;
 }
 
@@ -412,7 +412,7 @@ html {
 
 .blog-post-date {
     font-size: 0.9rem;
-    color: #7f8c8d;
+    color: #8a7a6d;
     font-weight: 300;
     margin-bottom: 0.75rem;
 }
@@ -471,7 +471,7 @@ html {
 .authors {
     font-style: italic;
     font-size: 0.9rem;
-    color: #7f8c8d;
+    color: #8a7a6d;
     margin: 0.5rem 0;
 }
 
@@ -491,7 +491,7 @@ html {
     display: inline-block;
     margin-right: 1rem;
     font-size: 0.9rem;
-    color: #52796f;
+    color: #9c5a3c;
     font-weight: 400;
 }
 
