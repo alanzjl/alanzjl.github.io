@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <!-- Primary Meta Tags -->
     <title>Alan (Jialiang) Zhao - Robotics and AI Researcher</title>
     <meta name="title" content="Alan (Jialiang) Zhao - Robotics and AI Researcher">
-    <meta name="description" content="AI researcher and robotics engineer at 1X Technologies. PhD from MIT CSAIL. Research in tactile sensing, robot learning, and embodied AI. Building general physically grounded AI for humanoid robots.">
+    <meta name="description" content="Robotics researcher at OpenAI. MIT PhD. I build AI for the physical world, with a focus on robot learning, tactile sensing, and manipulation.">
     <meta name="author" content="Alan (Jialiang) Zhao">
     <meta name="keywords" content="Alan Zhao, Jialiang Zhao, OpenAI, robotics, artificial intelligence, AI, MIT CSAIL, tactile sensing, robot learning, manipulation, 1X Technologies, humanoid robots, embodied AI">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://alanz.info/">
     <meta property="og:title" content="Alan (Jialiang) Zhao - Robotics and AI Researcher">
     <meta property="og:description" content="Robotics Research at OpenAI. PhD from MIT CSAIL. Research in robot learning and embodied AI.">
     <meta property="og:image" content="https://alanz.info/images/profile.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
     <meta property="og:site_name" content="Alan (Jialiang) Zhao">
     <meta property="og:locale" content="en_US">
     <meta property="profile:first_name" content="Alan">
     <meta property="profile:last_name" content="Zhao">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="https://alanz.info/">
     <meta property="twitter:title" content="Alan (Jialiang) Zhao - Robotics and AI Researcher">
     <meta property="twitter:description" content="OpenAI Robotics Research. PhD from MIT CSAIL. Research in robot learning and embodied AI.">
     <meta property="twitter:image" content="https://alanz.info/images/profile.jpg">
-    <meta property="twitter:creator" content="@alanz_jl">
-    
+    <meta property="twitter:creator" content="@alanzjl">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://alanz.info/">
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?v=profile-rounded-2026">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png?v=profile-rounded-2026">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=profile-2026">
+
     <!-- Theme Color -->
-    <meta name="theme-color" content="#9c5a3c">
+    <meta name="theme-color" content="#faf9f6">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -81,596 +81,252 @@
         "knowsAbout": ["Robotics", "Artificial Intelligence", "Tactile Sensing", "Robot Learning", "Manipulation", "Embodied AI"]
     }
     </script>
-    
-    <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Delius&family=Exo:wght@100;200;300;400;500;900&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap'); */
-        @font-face {
-            font-family: 'Exo';
-            src: url("fonts/Exo-VariableFont_wght.ttf"), url("fonts/Exo-Italic-VariableFont_wght.ttf");
-        }
-        @font-face {
-            font-family: 'kai';
-            src: url("fonts/kai.ttf");
-        }
-    </style>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
-
 <body>
-    <div class="main-container">
-        <!-- Left Sidebar -->
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-content">
-                <div class="profile-section">
-                    <img src="images/profile.jpg" alt="Alan Zhao" id="profilePicture" class="profile-picture">
-                    <h1 class="profile-name">Alan <span class="nickname">(Jialiang)</span> Zhao</h1>
-                    <a href="https://alanz.info/myname/index.html" class="chinese-name"><span class="cn-name" lang="zh-Hans">赵家樑</span></a>
-                    <p class="profile-title">Robotics and AI</p>
-                    <p class="profile-affiliation">OpenAI & Ph.D from MIT CSAIL</p>
-                </div>
-                
-                <nav class="contact-links">
-                    <a class="contact-link" href="https://www.linkedin.com/in/jialiang-zhao">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
-                        </svg>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a class="contact-link" href="https://github.com/alanzjl">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                        </svg>
-                        <span>GitHub</span>
-                    </a>
-                    <a class="contact-link" href="https://scholar.google.com/citations?user=LaW7igYAAAAJ&hl=en">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
-                        </svg>
-                        <span>Scholar</span>
-                    </a>
-                    <a class="contact-link" href="mailto:alanzhao@csail.mit.edu">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
-                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
-                        </svg>
-                        <span>Email</span>
-                    </a>
-                    <a class="contact-link" href="https://tapdrop.app">
-                        <span>Try TapDrop.app!</span>
-                    </a>
-                </nav>
+<a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="wordmark" href="#about" aria-label="Alan Zhao, home">Alan Zhao<span class="wordmark-dot" aria-hidden="true">.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="#about" aria-current="location">About</a>
+            <a href="#research">Research</a>
+            <a href="#build">Projects</a>
+            <a href="#blog">Writing</a>
+        </nav>
+    </header>
+<main class="page" id="main">
+<section class="intro" id="about" aria-labelledby="name">
+        <div class="intro-top">
+            <div class="intro-identity">
+                <p class="eyebrow">Robotics research · OpenAI</p>
+                <h1 id="name" aria-label="Alan (Jialiang) Zhao">
+                    <span class="name-primary">Alan Zhao</span>
+                    <span class="name-secondary">Jialiang Zhao <span class="name-note">is my full name</span></span>
+                </h1>
+                <p class="full-name"><a href="myname/index.html" lang="zh-Hans" aria-label="About my Chinese name, 赵家樑">赵家樑</a></p>
             </div>
-        </aside>
-        
-        
-        <!-- Main Content Area -->
-        <div class="content-area">
-
-            <main class="main-content">
-                <!-- Navigation Tabs -->
-                <div class="nav-container">
-                <ul class="nav nav-tabs" id="mainTabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">About</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="build-tab" data-bs-toggle="tab" data-bs-target="#build" type="button" role="tab" aria-controls="build" aria-selected="false">Build</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="blog-tab" data-bs-toggle="tab" data-bs-target="#blog" type="button" role="tab" aria-controls="blog" aria-selected="false">Blog</button>
-                    </li>
-                </ul>
-                </div>
-
-                <!-- Tab Content -->
-                <div class="tab-content" id="mainTabsContent">
-                    <!-- About Tab -->
-                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-
-                <p>I teach artificial beings to think and behave, fast and slow.</p>
-
-                <h1 class="mb-4 greeting">Hi there!</h1>
-                <p>
-                    I'm currently working on building general physically grounded AI at <a href="https://www.openai.com/">OpenAI</a>'s robotics research lab. Before that, I obtained my PhD from <a href="https://www.csail.mit.edu/">MIT CSAIL</a>. I was advised by
-                    Prof. <a href="https://bcs.mit.edu/directory/edward-adelson">Edward H. Adelson</a>, and I had the opportunity to collaborate with Prof. <a href="https://groups.csail.mit.edu/locomotion/russt.html">Russ Tedrake</a> and Prof. <a href="https://kaiminghe.github.io/">Kaiming He</a>. Recent highlights:
-                </p>
-
-                <div class="row justify-content-center">
-                    <div class="col-2 date text-end"> 
-                        <p class="my-0">2025 - Present:</p>
-                        <p class="location">San Francisco, CA</p>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                        <p> General purpose, physically grounded AI for agents in the real world at OpenAI's robotics research lab. Briefly worked on building brains for humanoid robots at 1X Technologies before that.</p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-2 date text-end"> 
-                        <p class="my-0">2022 - 2025:</p>
-                        <p class="location">Cambridge, MA</p>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                        <p> Working towards my PhD at MIT CSAIL and MechE. I research contact-aware robotic manipulation and robot learning.</p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-2 date text-end"> 
-                        <p class="my-0">2024 Summer⛱️:</p>
-                        <p class="location">Cambridge, MA</p>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                        <p> Research intern with the Large Behavior Models team at Toyota Research Institute. Multi-modal sensing and learning.</p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-2 date text-end">
-                        <p class="my-0">2021 - 2022🚕:</p>
-                        <p class="location">Mountain View, CA</p>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                        <p> Planning & prediction for self-driving cars at <a href="https://www.nuro.ai/">Nuro Inc</a>.</p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-2 date text-end">
-                        <p class="my-0">2018 - 2020🦿:</p>
-                        <p class="location">Pittsburgh, PA</p>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                        <p> Research robot learning and manipulation during my Master in Robotics degree at The Robotics Institute of Carnegie Mellon
-                            University with <a href="https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/">Prof. Oliver Kroemer</a>.</p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-2 date text-end">
-                        <p class="my-0">2017 - 2018🤖:</p>
-                        <p class="location">Berkeley, CA</p>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                        <p> Building & optimizing exoskeletons with <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/bajcsy.html">Prof. Ruzena Bajcsy</a> at UC Berkeley <a href="http://hart.berkeley.edu/">HART
-                            Lab</a> as an undergrad researcher.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <p>
-                        Out of work & school, I enjoy software and hardware robotics DIY. Try out <a href="https://tapdrop.app">TapDrop.app</a> which is a p2p file sharing webapp that supports any platform and any network. I recently started filming
-                        some of my hardware DIYs. Check out my YouTube channel <a href="https://www.youtube.com/channel/UCnIEhwA_XKNF-f2FF7HhlJQ">Crafted by JZ</a> or my BiliBili channel <a href="https://space.bilibili.com/1400874850/">试作间</a>
-                        if interested. Check out the <a href="#hobby">#hobby</a> section for released projects. Recently I'm working on an ambitious software project called <a href="https://tpvortex.org/">tpvortex.org</a>. Stay tuned.
-                    </p>
-                </div>
-
-                        <h1 class="mb-4 mt-5 section-names text-start">News</h1>
-                <ul>
-                    <li><span class="date">2025 Sept:</span> 🏭 <a href="https://fabrica.csail.mit.edu/">Fabrica</a> won the <span class="award">Best Paper Award</span> at CoRL 2025!</li>
-                    <li><span class="date">2025 Sept:</span> 🏭 <a href="https://fabrica.csail.mit.edu/">Fabrica</a> has been selected as a <span class="award">Best Paper Award Finalist</span> at CoRL 2025!</li>
-                    <li><span class="date">2025 Aug:</span> 🏭 <a href="https://fabrica.csail.mit.edu/">Fabrica</a> has been accepted to CoRL 2025!</li>
-                    <li><span class="date">2025 May:</span> <a href="https://polytouch.alanz.info/">PolyTouch</a> won the <span class="award">Best Paper Award in Field and Service Robotics</span> at <a href="https://www.icra2025.org/">ICRA 2025</a>!</li>
-                    <li><span class="date">2025 Feb:</span> I defended my PhD thesis and graduated from MIT! I'm now working on building general purpose physically grounded AI for humanoid robots at <a href="https://www.1x.tech/">1X Technologies</a>.</li>
-                    <li><span class="date">2024 Sept:</span> <a href="https://liruiw.github.io/hpt">Heterogeneous Pre-trained Transformers (HPT)</a> has been accepted as a <span class="award">NeurIPS 24 spotlight</span> paper!</li>
-                    <li><span class="date">2024 Sept:</span> Our paper <a href="https://t3.alanz.info/"></a>Transferable Tactile Transformers (T3)</a> has been accepted to CoRL 24!</li>
-                    <li><span class="date">2024 Aug:</span> Wrapped up my internship with the Large Behavior Models team at <a href="https://www.tri.global/">Toyota Research Institute</a>! More details on my projects at TRI coming soon.</li>
-                    <li><span class="date">2024 May:</span> We published a new paper on a foundational framework for camera-based tactile sensing and contact-aware manipulation <a href="https://t3.alanz.info">T3</a>!</li>
-                    <li><span class="date">2024 Jan:</span> PoCo was accepted to RSS 2024! See it on <a href="https://news.mit.edu/2024/technique-for-more-effective-multipurpose-robots-0603">MIT News</a>.</li>
-                    <li><span class="date">2023 Oct:</span> My paper GelSight Svelte was nominated for the <span class="award">Best Overall Paper
-                        Award</span> at IROS 2023! Also see it on <a href="https://news.mit.edu/2023/finger-shaped-sensor-enables-more-dexterous-robots-1004">MIT News</a>.</li>
-                    <li><span class="date">2023 May:</span> My paper FingerSLAM was presented at ICRA in London.</li>
-                    <li><span class="date">2023 May:</span> I passed my qualification exam, so I'm officially a PhD
-                        candidate now:)</li>
-                        </ul>
-
-                        <h1 class="mb-4 mt-5 section-names text-start" id="resume">Resume</h1>
-                        <div class="row py-3 text-start">
-                            <a href="resources/AlanZhao.pdf">[Link]</a>
-                        </div>
-                    </div>
-
-                    <!-- Research Tab -->
-                    <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
-                        <!-- <h1 class="mb-4 mt-5 section-names text-center">Research</h1> -->
-
-                <div>
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/Fabrica.png" alt="Fabrica"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">Fabrica: Dual-Arm Assembly of General Multi-Part Objects via Integrated Planning and Learning</div>
-                            <div class="summary">Precisian assembly of complex multi-part objects with planning and learning.</div>
-                            
-                            <div class="authors">Yunsheng Tian, Joshua Jacob, Yijiang Huang, <span class="me">Jialiang Zhao</span>, Edward Li Gu, Pingchuan Ma, Annan Zhang, Farhad Javid, Branden Romero, Sachin Chitta, Shinjiro Sueda, Hui Li, Wojciech Matusik. CoRL 2025.</div>
-                            <div class="links">
-                                <a href="https://fabrica.csail.mit.edu/" class="link-item">Website</a>
-                                <a href="https://arxiv.org/abs/2506.05168" class="link-item">arXiv</a>
-                                <a href="https://fabrica.csail.mit.edu/static/videos/video_main.mp4" class="link-item">Video</a>
-                                <a href="" class="link-item">Code Coming Soon</a>
-                                <span class="award">Best Paper Award, CoRL'25</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/polytouch.jpeg" alt="PolyTouch"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">PolyTouch: A Robust Multi-Modal Tactile Sensor for Contact-rich Manipulation Using Tactile-Diffusion Policies</div>
-                            <div class="summary">Close the last-inch gap in dexterous manipulation with a tactile-diffusion policy.</div>
-                            
-                            <div class="authors"><span class="me">Jialiang Zhao</span>, Naveen Kuppuswamy, Siyuan Feng, Benjamin Burchfiel, Edward Adelson. ICRA 2025.</div>
-                            <div class="links">
-                                <a href="https://polytouch.alanz.info/" class="link-item">Website</a>
-                                <a href="https://arxiv.org/abs/2504.19341" class="link-item">arXiv</a>
-                                <span class="award">Best Paper Award in Field and Service Robotics</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/hpt.png" alt="HPT"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers</div>
-                            <div class="summary">A pre-trained framework to learn robotic manipulation through heterogeneous embodiments.</div>
-                            
-                            <div class="authors">Lirui Wang, Xinlei Chen, <span class="me">Jialiang Zhao</span>, Kaiming He.  Accepted to NeurIPS 2024 (Spotlight).</div>
-                            <div class="links">
-                                <a href="https://liruiw.github.io/hpt" class="link-item">Website</a>
-                                <a href="http://arxiv.org/abs/2409.20537" class="link-item">arXiv</a>
-                                <a href="https://github.com/liruiw/HPT" class="link-item">Code</a>
-                                <a href="https://huggingface.co/liruiw/hpt-base" class="link-item">Pretrained Weights</a>
-                                <a href="https://github.com/liruiw/lerobot" class="link-item">HF Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/t3.gif" alt="T3"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">Transferable Tactile Transformers for Representation Learning Across Diverse Sensors and Tasks</div>
-                            <div class="summary">A tactile representation learned from multi-sensors and multi-tasks, and a tactile dataset that contains over 3M tactile images collected from 13 sensors and 11 tasks.</div>
-                            
-                            <div class="authors"><span class="me">J. Zhao</span>, Y. Ma, L. Wang, E. Adelson.  Accepted to 2024 Conference on Robot Learning (CoRL).</div>
-                            <div class="links">
-                                <a href="https://t3.alanz.info/" class="link-item">Website</a>
-                                <a href="https://arxiv.org/abs/2406.13640" class="link-item">arXiv</a>
-                                <a href="https://github.com/alanzjl/t3" class="link-item">Code</a>
-                                <a href="https://huggingface.co/datasets/alanz-mit/FoundationTactile" class="link-item">Dataset and Weights</a>
-                                <a href="https://colab.research.google.com/drive/1MmO9w1y59Gy6ds0iKlW04olszGko56Vf?usp=sharing" class="link-item">Colab</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/electro.gif" alt="Electronics insertion"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">Learning to insert electronics with submillimeter-level tolerance from tactile sensing and extrinsic contacts</div>
-                            <div class="authors"><span class="me">J. Zhao</span> as the leading contributor. In preparation.</div>
-                            <div class="links" style="font-weight: 100;">
-                                more details coming soon.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/poco.gif" alt="policy composition"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">PoCo: Policy Composition From and For Heterogeneous Robot Learning</div>
-                            <div class="summary">A new fomulation for diffusion policies that can naturally be extented to multi-task, multi-embodiment settings.</div>
-                            <div class="authors">L. Wang, <span class="me">J. Zhao</span>, Y. Du, E. Adelson, R. Tedrake. Accepted to 2024 Robotics: Science and Systems (RSS).</div>
-                            <div class="links">
-                                <a href="https://liruiw.github.io/policycomp/" class="link-item">Website</a>
-                                <a href="https://arxiv.org/abs/2402.02511" class="link-item">arXiv</a>
-                                <a href="https://www.youtube.com/watch?v=IEulXFl_Th8" class="link-item">YouTube</a>
-                                <a href="https://twitter.com/LiruiWang1/status/1754880508008271970?s=20"
-                                    class="link-item">Twitter</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/taclink.jpg" alt="TacLink Sensor"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">GelLink: A Compact Multi-phalanx Finger with Vision-based Tactile Sensing and Proprioception</div>
-                            <div class="summary">A novel articulated tactile finger design that only requires one camera for tactile sensing.</div>
-                            <div class="authors">Y. Ma, <span class="me">J. Zhao</span>, E. Adelson. Accepted to the 2024
-                                IEEE International Conference on Robotics and Automation (ICRA 2024).</div>
-                            <div class="links">
-                                <a href="https://arxiv.org/abs/2403.14887" class="link-item">arXiv</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/gelsightsvelte.gif" alt="Gelsight Svelte sensor"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">GelSight Svelte: A Human Finger-shaped Single-camera Tactile Robot
-                                Finger with Large Sensing Coverage and Proprioceptive Sensing</div>
-                            <div class="summary">Think outside of the “box”: an optical design that unlocked the door of putting high-res tactile sensing in non-rectangular form factors.</div>
-                            <div class="authors"><span class="me">J. Zhao</span> and E. Adelson. Accepted to the 2023
-                                International Conference on Intelligent Robots and Systems (IROS 2023)</div>
-                            <div class="links">
-                                <a href="https://gelsight-svelte.alanz.info/" class="link-item">Website</a>
-                                <a href="https://arxiv.org/abs/2309.10885" class="link-item">arXiv</a>
-                                <a href="https://youtu.be/yI6WDzfYD8Q?si=OLWQr9AKQxbBr0oQ" class="link-item">YouTube</a>
-                                <a href="https://news.mit.edu/2023/finger-shaped-sensor-enables-more-dexterous-robots-1004"
-                                    class="link-item">MIT News</a>
-                                <span class="award">Best Overall Paper Award Finalist</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/gelsightsveltehand.gif" alt="Gelsight Svelte Hand"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">GelSight Svelte Hand: A Three-finger, Two-DoF, Low-cost,
-                                Tactile-rich Robot Hand for Dexterous Manipulation</div>
-                            <div class="summary">A novel robot hand configuration that is dexterous and tactile-rich.</div>
-                            <div class="authors"><span class="me">J. Zhao</span> and E. Adelson. Submitted to the IROS
-                                workshop on Visuo-Tactile Perception, Learning, Control for Manipulation and HRI (IROS
-                                RoboTac 2023)</div>
-                            <div class="links">
-                                <a href="https://gelsight-svelte.alanz.info/" class="link-item">Website</a>
-                                <a href="https://arxiv.org/abs/2309.10886" class="link-item">arXiv</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/fingerslam.gif"
-                                alt="FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">FingerSLAM: Closed-loop Unknown Object Localization and
-                                Reconstruction from Visuo-tactile Feedback</div>
-                            <div class="summary">Localizing and reconstructing unknown in-hand objects from vision and tactile with factor grasp-based optimization.</div>
-                            <div class="authors"><span class="me">J. Zhao</span>, M. Bauza, and E. Adelson. Accepted to
-                                the 2023 IEEE International Conference on Robotics and Automation (ICRA 2023)</div>
-                            <div class="links">
-                                <a href="https://arxiv.org/abs/2303.07997" class="link-item">arXiv</a>
-                                <a href="https://youtu.be/f9qXYeQI9_M" class="link-item">YouTube</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/crest.png"
-                                alt="Causal Reasoning in Simulation for Structure and Transfer Learning of Robot Manipulation Policies"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">Causal Reasoning in Simulation for Structure and Transfer Learning
-                                of Robot Manipulation Policies</div>
-                            <div class="summary">Improve data efficiency in RL by reducing observation and action spaces through causal reasoning.</div>
-                            <div class="authors">T. E. Lee, <span class="me">J. Zhao</span>, A. S. Sawhney, S. Girdhar,
-                                O. Kroemer. Accepted to the 2021 IEEE International Conference on Robotics and
-                                Automation (ICRA 2021)</div>
-                            <div class="links">
-                                <a href="https://arxiv.org/abs/2103.16772" class="link-item">arXiv</a>
-                                <a href="https://sites.google.com/view/crest-causal-struct-xfer-manip"
-                                    class="link-item">Website</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/corl20.gif"
-                                alt="Learning to Compose Hierarchical Object-Centric Controllers for
-                                Robotic Manipulation"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">Learning to Compose Hierarchical Object-Centric Controllers for
-                                Robotic Manipulation</div>
-                            <div class="summary">Improve data efficiency in RL by devising and composing hierarchical controllers.</div>
-                            <div class="authors">M. Sharma*, J. Liang*, <span class="me">J. Zhao</span>, A. LaGrassa, O.
-                                Kroemer. Conference on Robot Learning (CoRL). November 2020. </div>
-                            <div class="links">
-                                <a href="https://arxiv.org/abs/2011.04627" class="link-item">arXiv</a>
-                                <a href="https://sites.google.com/view/compositional-object-control/"
-                                    class="link-item">Website</a>
-                                <a href="https://www.youtube.com/watch?v=JZwlys5Jdfo" class="link-item">YouTube</a>
-                                <span class="award">Plenary Presentation</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/corl20_grasp.gif"
-                                alt="Towards Robotic Assembly by Predicting Robust, Precise and Task-oriented Grasps"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">Towards Robotic Assembly by Predicting Robust, Precise and Task-oriented Grasps</div>
-                            <div class="summary">Improve precision during different types of robotic assembly tasks with probabilistic grasp planning.</div>
-                            <div class="authors"><span class="me">J. Zhao</span>, D. Troniak, O.Kroemer. Submitted and
-                                accepted to 2020 Conference on Robot Learning (CoRL 2020). Oral presentation. </div>
-                            <div class="links">
-                                <a href="https://arxiv.org/abs/2011.02462" class="link-item">arXiv</a>
-                                <a href="https://www.youtube.com/watch?v=6F54Cta-q7I" class="link-item">YouTube</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom">
-                        <div class="col-6 col-lg-4">
-                            <img src="images/research/FSR2019.png"
-                                alt="Towards Precise Robotic Grasping by Probabilistic Post-grasp Displacement Estimation"
-                                class="img-fluid-2 img-thumbnail">
-                        </div>
-                        <div class="col-6 col-lg-8 research-block">
-                            <div class="paper-title">Towards Precise Robotic Grasping by Probabilistic Post-grasp
-                                Displacement Estimation</div>
-                            <div class="summary">Improve grasping precision by estimating a probabilistic distribution for post-grasp object displacements.</div>
-                            <div class="authors"><span class="me">J. Zhao</span>, J. Liang, O.Kroemer. Submitted and
-                                accepted to 12th Conference on Field and Service Robotics (FSR 2019). Oral presentation.
-                            </div>
-                            <div class="links">
-                                <a href="https://arxiv.org/abs/1909.02129" class="link-item">arXiv</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 border-bottom text-center d-flex align-items-center">
-                        <p class="my-0 more-paper">...more on my <a
-                                href="https://scholar.google.com/citations?user=LaW7igYAAAAJ&hl=en">Google Scholar</a>
-                            page.</p>
-                    </div>
-                        </div>
-                    </div>
-
-                    <!-- Build Tab -->
-                    <div class="tab-pane fade" id="build" role="tabpanel" aria-labelledby="build-tab">
-                        <!-- <h1 class="mb-4 mt-5 section-names text-center">Build Projects</h1> -->
-                        <div class="container-fluid px-0">
-                            <div class="row g-4">
-                                <!-- Alkaid Mount Card -->
-                                <div class="col-12 col-md-6 col-xl-4">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="images/research/alkaidmount.gif" alt="Alkaid Mount">
-                                        <div class="card-body d-flex flex-column">
-                                            <p class="card-text paper-title">Alkaid Mount: Equatorial mount built with HarmonicDrive
-                                                for astrophotography</p>
-                                            <p class="card-text">A small yet sturdy equatorial mount built for
-                                                astronomy/astrophotography, using real HarmonicDrive gearboxes. Fully open-sourced. See my <a href="blog/alkaid-mount.html">blog post</a> for more details.
-                                            </p>
-                                            <div class="links mt-auto">
-                                                <a href="https://github.com/alanzjl/AlkaidMount" class="link-item">GitHub</a>
-                                                <a href="https://www.youtube.com/watch?v=k2GoMa2DpH8" class="link-item">YouTube</a>
-                                                <a href="https://www.bilibili.com/video/BV1SR4y1X7bt" class="link-item">BiliBili</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Neptune MIDI Card -->
-                                <div class="col-12 col-md-6 col-xl-4">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="images/research/midi.jpeg" alt="Neptune MIDI">
-                                        <div class="card-body d-flex flex-column">
-                                            <p class="card-text paper-title">Neptune MIDI</p>
-                                            <p class="card-text">A 3d printed MIDI controller that can be used for video and photo
-                                                editing (Lightroom, Photoshop, Premiere, DaVinci Resolve, etc.) It contains
-                                                mechanical switches, rotary encoders, sliders, a joystick, and a small oled screen.
-                                                Solidworks source files, STL files, BOM are fully open source.</p>
-                                            <div class="links mt-auto">
-                                                <a href="https://github.com/alanzjl/NeptuneMIDI" class="link-item">GitHub</a>
-                                                <a href="https://www.youtube.com/watch?v=679nCupdGUM" class="link-item">YouTube</a>
-                                                <a href="https://www.bilibili.com/video/BV15q4y1V7St?from=search&seid=7278600609111384034"
-                                                    class="link-item">BiliBili</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- RS-Slider Card -->
-                                <div class="col-12 col-md-6 col-xl-4">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="images/research/rs_slider.jpeg" alt="RS-Slider">
-                                        <div class="card-body d-flex flex-column">
-                                            <p class="card-text paper-title">RS-Slider</p>
-                                            <p class="card-text">A mostly 3d printed, motorized, 2-axis camera slider that is Really
-                                                Solid (R.S.). Tested with a 15lbs cinema camera setup. Software and hardware W.I.P.
-                                                Details to be added.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- RPI AirPlay HiFi Card -->
-                                <div class="col-12 col-md-6 col-xl-4">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="images/research/rpi_hifi.jpeg" alt="RPI AirPlay HiFi">
-                                        <div class="card-body d-flex flex-column">
-                                            <p class="card-text paper-title">RPI AirPlay HiFi</p>
-                                            <p class="card-text">AirPlay + DAC + AMP, using a Raspberry Pi Zero W and HiFiBerry.
-                                                Source files & instructions can be found in </p>
-                                            <div class="links mt-auto">
-                                                <a href="https://github.com/alanzjl/RPI_AirPlay_HiFi" class="link-item">GitHub:
-                                                    alanzjl/RPI_AirPlay_HiFi</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Filter Drawer Card -->
-                                <div class="col-12 col-md-6 col-xl-4">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="images/research/filter_drawer.gif" alt="Filter Drawer">
-                                        <div class="card-body d-flex flex-column">
-                                            <p class="card-text paper-title">2" Filter drawer for astrophotography</p>
-                                            <p class="card-text">A filter drawer that houses a single 2" filter which be used between a telescope and a Nikon or Canon camera</p>
-                                            <div class="links mt-auto">
-                                                <a href="https://github.com/alanzjl/FilterDrawer" class="link-item">GitHub:
-                                                    alanzjl/FilterDrawer</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Blog Tab -->
-                    <div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab">
-                        <!-- <h1 class="mb-4 mt-5 section-names text-center">Blog</h1> -->
-                        <div class="blog-list">
-                            <p class="text-center text-muted">Blog posts coming soon...</p>
-                        </div>
-                    </div>
-                </div>
-            </main>
+            <img class="portrait" src="images/profile.jpg" alt="Alan Zhao" width="180" height="180" fetchpriority="high">
         </div>
-    </div>
+        <p class="intro-line">I build AI for the physical world.</p>
+        <div class="bio">
+            <p>I work on general-purpose, physically grounded AI at <a href="https://www.openai.com/">OpenAI</a>. My research spans robot learning, tactile sensing, and manipulation.</p>
+            <p>I earned my PhD at <a href="https://www.csail.mit.edu/">MIT CSAIL</a>, advised by <a href="https://bcs.mit.edu/directory/edward-adelson">Edward Adelson</a>, and collaborated with <a href="https://groups.csail.mit.edu/locomotion/russt.html">Russ Tedrake</a> and <a href="https://kaiminghe.github.io/">Kaiming He</a>.</p>
+        </div>
+        <nav class="contact-links text-links" aria-label="Contact and profiles">
+            <a href="mailto:alanzhao@csail.mit.edu">Email <span aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.com/citations?user=LaW7igYAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/alanzjl">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/jialiang-zhao">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="resources/AlanZhao.pdf" id="resume">Résumé <span class="file-type">PDF</span></a>
+        </nav>
+        <details class="background disclosure">
+            <summary>Background <span class="summary-note">Experience &amp; education</span></summary>
+            <dl class="timeline">
+                <div><dt>2025–present</dt><dd><strong>OpenAI</strong><span>Robotics research. Previously, a brief stint at 1X building AI for humanoids.</span></dd></div>
+                <div><dt>2022–2025</dt><dd><strong>MIT CSAIL · PhD</strong><span>Contact-aware manipulation and robot learning with Edward Adelson.</span></dd></div>
+                <div><dt>Summer 2024</dt><dd><strong>Toyota Research Institute</strong><span>Research intern, Large Behavior Models. Multimodal sensing and learning.</span></dd></div>
+                <div><dt>2021–2022</dt><dd><strong>Nuro</strong><span>Planning and prediction for autonomous vehicles.</span></dd></div>
+                <div><dt>2018–2020</dt><dd><strong>Carnegie Mellon · MS in Robotics</strong><span>Robot learning and manipulation with <a href="https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/">Oliver Kroemer</a>.</span></dd></div>
+                <div><dt>2017–2018</dt><dd><strong>UC Berkeley · Undergraduate research</strong><span>Exoskeleton design and optimization with <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/bajcsy.html">Ruzena Bajcsy</a> at the <a href="http://hart.berkeley.edu/">HART Lab</a>.</span></dd></div>
+            </dl>
+        </details>
+    </section>
+<section class="section" id="news" aria-labelledby="news-title">
+    <div class="section-heading"><h2 id="news-title">News</h2></div>
+    <ul class="news-list">
+        <li><time datetime="2025-09">Sep 2025</time><p><a href="https://fabrica.csail.mit.edu/">Fabrica</a> won the <strong>Best Paper Award</strong> at CoRL 2025.</p></li>
+        <li><time datetime="2025-05">May 2025</time><p><a href="https://polytouch.alanz.info/">PolyTouch</a> won ICRA 2025’s <strong>Best Paper Award in Field and Service Robotics</strong>.</p></li>
+        <li><time datetime="2025-02">Feb 2025</time><p>Defended my PhD at MIT and joined 1X to build AI for humanoids.</p></li>
+        <li><time datetime="2024-09">Sep 2024</time><p><a href="https://liruiw.github.io/hpt">HPT</a> was accepted as a <strong>NeurIPS 2024 Spotlight</strong>.</p></li>
+        <li><time datetime="2024-09">Sep 2024</time><p><a href="https://t3.alanz.info/">Transferable Tactile Transformers (T3)</a> was accepted to CoRL 2024.</p></li>
+        <li><time datetime="2024-08">Aug 2024</time><p>Completed my internship with Toyota Research Institute’s Large Behavior Models team.</p></li>
+        <li><time datetime="2024-05">May 2024</time><p>Published <a href="https://t3.alanz.info/">T3</a>, a framework for tactile representation learning.</p></li>
+        <li><time datetime="2024-01">Jan 2024</time><p><a href="https://liruiw.github.io/policycomp/">PoCo</a> was accepted to RSS 2024. <a href="https://news.mit.edu/2024/technique-for-more-effective-multipurpose-robots-0603">MIT News ↗</a></p></li>
+        <li><time datetime="2023-10">Oct 2023</time><p><a href="https://gelsight-svelte.alanz.info/">GelSight Svelte</a> was an IROS 2023 <strong>Best Overall Paper Award finalist</strong>. <a href="https://news.mit.edu/2023/finger-shaped-sensor-enables-more-dexterous-robots-1004">MIT News ↗</a></p></li>
+        <li><time datetime="2023-05">May 2023</time><p>Presented <a href="https://arxiv.org/abs/2303.07997">FingerSLAM</a> at ICRA in London and passed my PhD qualifying exam.</p></li>
+    </ul>
+</section>
+<section class="section" id="research" aria-labelledby="research-title">
+    <div class="section-heading"><h2 id="research-title">Selected research</h2><a class="section-aside" href="https://scholar.google.com/citations?user=LaW7igYAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a></div>
+    <p class="section-intro">Learning to act, sense, and interact with the world.</p>
+    <article class="publication">
+        <div class="publication-image"><img src="images/research/Fabrica.png" alt="Fabrica: Dual-Arm Assembly of General Multi-Part Objects via Integrated Planning and Learning" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">CoRL 2025</p>
+            <h3>Fabrica: Dual-Arm Assembly of General Multi-Part Objects via Integrated Planning and Learning</h3>
+            <p class="paper-summary">Planning and learning for precise, dual-arm assembly of complex objects.</p>
+            <p class="authors">Yunsheng Tian, Joshua Jacob, Yijiang Huang, <span class="me">Jialiang Zhao</span>, Edward Li Gu, Pingchuan Ma, Annan Zhang, Farhad Javid, Branden Romero, Sachin Chitta, Shinjiro Sueda, Hui Li, Wojciech Matusik.</p>
+            <p class="award">Best Paper Award, CoRL 2025</p>
+            <div class="text-links"><a href="https://fabrica.csail.mit.edu/">Website</a><a href="https://arxiv.org/abs/2506.05168">arXiv</a><a href="https://fabrica.csail.mit.edu/static/videos/video_main.mp4">Video</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/polytouch.jpeg" alt="PolyTouch: A Robust Multi-Modal Tactile Sensor for Contact-rich Manipulation Using Tactile-Diffusion Policies" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">ICRA 2025</p>
+            <h3>PolyTouch: A Robust Multi-Modal Tactile Sensor for Contact-rich Manipulation Using Tactile-Diffusion Policies</h3>
+            <p class="paper-summary">Multimodal tactile sensing and diffusion policies for contact-rich manipulation.</p>
+            <p class="authors"><span class="me">Jialiang Zhao</span>, Naveen Kuppuswamy, Siyuan Feng, Benjamin Burchfiel, Edward Adelson.</p>
+            <p class="award">Best Paper Award in Field and Service Robotics</p>
+            <div class="text-links"><a href="https://polytouch.alanz.info/">Website</a><a href="https://arxiv.org/abs/2504.19341">arXiv</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/hpt.png" alt="Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">NeurIPS 2024 · Spotlight</p>
+            <h3>Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers</h3>
+            <p class="paper-summary">Learning shared representations across robots with different sensors and embodiments.</p>
+            <p class="authors">Lirui Wang, Xinlei Chen, <span class="me">Jialiang Zhao</span>, Kaiming He.</p>
 
-    <footer class="footer">
-        2025 By Alan (Jialiang) Zhao. Website coded from scratch by Alan (Jialiang) Zhao. Please let me know if you see any glitches:)
-    </footer>
+            <div class="text-links"><a href="https://liruiw.github.io/hpt">Website</a><a href="https://arxiv.org/abs/2409.20537">arXiv</a><a href="https://github.com/liruiw/HPT">Code</a><a href="https://huggingface.co/liruiw/hpt-base">Pretrained Weights</a><a href="https://github.com/liruiw/lerobot">HF Code</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/t3.gif" alt="Transferable Tactile Transformers for Representation Learning Across Diverse Sensors and Tasks" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">CoRL 2024</p>
+            <h3>Transferable Tactile Transformers for Representation Learning Across Diverse Sensors and Tasks</h3>
+            <p class="paper-summary">Transferable tactile representations, trained on 3 million images from 13 sensors and 11 tasks.</p>
+            <p class="authors"><span class="me">J. Zhao</span>, Y. Ma, L. Wang, E. Adelson.</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+            <div class="text-links"><a href="https://t3.alanz.info/">Website</a><a href="https://arxiv.org/abs/2406.13640">arXiv</a><a href="https://github.com/alanzjl/t3">Code</a><a href="https://huggingface.co/datasets/alanz-mit/FoundationTactile">Dataset and Weights</a><a href="https://colab.research.google.com/drive/1MmO9w1y59Gy6ds0iKlW04olszGko56Vf?usp=sharing">Colab</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/poco.gif" alt="PoCo: Policy Composition From and For Heterogeneous Robot Learning" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">RSS 2024</p>
+            <h3>PoCo: Policy Composition From and For Heterogeneous Robot Learning</h3>
+            <p class="paper-summary">Composing diffusion policies across tasks, datasets, and robot embodiments.</p>
+            <p class="authors">L. Wang, <span class="me">J. Zhao</span>, Y. Du, E. Adelson, R. Tedrake.</p>
+
+            <div class="text-links"><a href="https://liruiw.github.io/policycomp/">Website</a><a href="https://arxiv.org/abs/2402.02511">arXiv</a><a href="https://www.youtube.com/watch?v=IEulXFl_Th8">YouTube</a><a href="https://twitter.com/LiruiWang1/status/1754880508008271970?s=20">Twitter</a><a href="https://news.mit.edu/2024/technique-for-more-effective-multipurpose-robots-0603">MIT News</a></div>
+        </div>
+    </article>
+    <details class="disclosure research-archive"><summary>More research <span class="summary-note">Earlier publications &amp; ongoing work</span></summary><article class="publication">
+        <div class="publication-image"><img src="images/research/electro.gif" alt="Learning to insert electronics with submillimeter-level tolerance from tactile sensing and extrinsic contacts" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">In preparation</p>
+            <h3>Learning to insert electronics with submillimeter-level tolerance from tactile sensing and extrinsic contacts</h3>
+            <p class="paper-summary">Tactile feedback for electronics assembly with submillimeter tolerances.</p>
+            <p class="authors"><span class="me">J. Zhao</span> · Lead contributor.</p>
+
+
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/taclink.jpg" alt="GelLink: A Compact Multi-phalanx Finger with Vision-based Tactile Sensing and Proprioception" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">ICRA 2024</p>
+            <h3>GelLink: A Compact Multi-phalanx Finger with Vision-based Tactile Sensing and Proprioception</h3>
+            <p class="paper-summary">An articulated tactile finger with a single camera for touch and proprioception.</p>
+            <p class="authors">Y. Ma, <span class="me">J. Zhao</span>, E. Adelson.</p>
+
+            <div class="text-links"><a href="https://arxiv.org/abs/2403.14887">arXiv</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/gelsightsvelte.gif" alt="GelSight Svelte: A Human Finger-shaped Single-camera Tactile Robot Finger with Large Sensing Coverage and Proprioceptive Sensing" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">IROS 2023</p>
+            <h3>GelSight Svelte: A Human Finger-shaped Single-camera Tactile Robot Finger with Large Sensing Coverage and Proprioceptive Sensing</h3>
+            <p class="paper-summary">A finger-shaped optical sensor with broad tactile coverage and proprioception.</p>
+            <p class="authors"><span class="me">J. Zhao</span> and E. Adelson.</p>
+            <p class="award">Best Overall Paper Award Finalist</p>
+            <div class="text-links"><a href="https://gelsight-svelte.alanz.info/">Website</a><a href="https://arxiv.org/abs/2309.10885">arXiv</a><a href="https://youtu.be/yI6WDzfYD8Q?si=OLWQr9AKQxbBr0oQ">YouTube</a><a href="https://news.mit.edu/2023/finger-shaped-sensor-enables-more-dexterous-robots-1004">MIT News</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/gelsightsveltehand.gif" alt="GelSight Svelte Hand: A Three-finger, Two-DoF, Low-cost, Tactile-rich Robot Hand for Dexterous Manipulation" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">IROS RoboTac Workshop 2023 · Submitted</p>
+            <h3>GelSight Svelte Hand: A Three-finger, Two-DoF, Low-cost, Tactile-rich Robot Hand for Dexterous Manipulation</h3>
+            <p class="paper-summary">A low-cost, three-finger robot hand with dense tactile sensing.</p>
+            <p class="authors"><span class="me">J. Zhao</span> and E. Adelson.</p>
+
+            <div class="text-links"><a href="https://gelsight-svelte.alanz.info/">Website</a><a href="https://arxiv.org/abs/2309.10886">arXiv</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/fingerslam.gif" alt="FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">ICRA 2023</p>
+            <h3>FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback</h3>
+            <p class="paper-summary">Tracking and reconstructing objects in hand using vision and touch.</p>
+            <p class="authors"><span class="me">J. Zhao</span>, M. Bauza, and E. Adelson.</p>
+
+            <div class="text-links"><a href="https://arxiv.org/abs/2303.07997">arXiv</a><a href="https://youtu.be/f9qXYeQI9_M">YouTube</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/crest.png" alt="Causal Reasoning in Simulation for Structure and Transfer Learning of Robot Manipulation Policies" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">ICRA 2021</p>
+            <h3>Causal Reasoning in Simulation for Structure and Transfer Learning of Robot Manipulation Policies</h3>
+            <p class="paper-summary">Causal reasoning to reduce observation and action spaces for efficient robot learning.</p>
+            <p class="authors">T. E. Lee, <span class="me">J. Zhao</span>, A. S. Sawhney, S. Girdhar, O. Kroemer.</p>
+
+            <div class="text-links"><a href="https://arxiv.org/abs/2103.16772">arXiv</a><a href="https://sites.google.com/view/crest-causal-struct-xfer-manip">Website</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/corl20.gif" alt="Learning to Compose Hierarchical Object-Centric Controllers for Robotic Manipulation" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">CoRL 2020 · Plenary</p>
+            <h3>Learning to Compose Hierarchical Object-Centric Controllers for Robotic Manipulation</h3>
+            <p class="paper-summary">Learning manipulation by composing hierarchical, object-centric controllers.</p>
+            <p class="authors">M. Sharma*, J. Liang*, <span class="me">J. Zhao</span>, A. LaGrassa, O. Kroemer.</p>
+
+            <div class="text-links"><a href="https://arxiv.org/abs/2011.04627">arXiv</a><a href="https://sites.google.com/view/compositional-object-control/">Website</a><a href="https://www.youtube.com/watch?v=JZwlys5Jdfo">YouTube</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/corl20_grasp.gif" alt="Towards Robotic Assembly by Predicting Robust, Precise and Task-oriented Grasps" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">CoRL 2020 · Oral</p>
+            <h3>Towards Robotic Assembly by Predicting Robust, Precise and Task-oriented Grasps</h3>
+            <p class="paper-summary">Probabilistic grasp planning for precise robotic assembly.</p>
+            <p class="authors"><span class="me">J. Zhao</span>, D. Troniak, O. Kroemer.</p>
+
+            <div class="text-links"><a href="https://arxiv.org/abs/2011.02462">arXiv</a><a href="https://www.youtube.com/watch?v=6F54Cta-q7I">YouTube</a></div>
+        </div>
+    </article>
+<article class="publication">
+        <div class="publication-image"><img src="images/research/FSR2019.png" alt="Towards Precise Robotic Grasping by Probabilistic Post-grasp Displacement Estimation" loading="lazy" decoding="async" width="240" height="180"></div>
+        <div class="publication-copy">
+            <p class="eyebrow">FSR 2019 · Oral</p>
+            <h3>Towards Precise Robotic Grasping by Probabilistic Post-grasp Displacement Estimation</h3>
+            <p class="paper-summary">Estimating object displacement after grasping to improve precision.</p>
+            <p class="authors"><span class="me">J. Zhao</span>, J. Liang, O. Kroemer.</p>
+
+            <div class="text-links"><a href="https://arxiv.org/abs/1909.02129">arXiv</a></div>
+        </div>
+    </article></details>
+    </section>
+<section class="section" id="build" aria-labelledby="projects-title">
+        <div class="section-heading"><h2 id="projects-title">Things I build</h2><span class="section-aside">Beyond research</span></div>
+        <p class="section-intro" id="hobby">I also make tools for photography, astronomy, and music. I share builds on <a href="https://www.youtube.com/channel/UCnIEhwA_XKNF-f2FF7HhlJQ">YouTube</a> and <a href="https://space.bilibili.com/1400874850/">BiliBili</a>.</p>
+        <div class="project-grid">
+            <article class="project project-featured">
+                <img src="images/research/alkaidmount.gif" alt="Alkaid equatorial mount rotating" loading="lazy" decoding="async" width="480" height="320">
+                <div><p class="eyebrow">Astronomy · Open source</p><h3>Alkaid Mount</h3><p>A compact equatorial mount for astrophotography, built with HarmonicDrive gearboxes.</p><div class="text-links"><a href="blog/alkaid-mount.html">Build notes</a><a href="https://github.com/alanzjl/AlkaidMount">GitHub</a><a href="https://www.youtube.com/watch?v=k2GoMa2DpH8">Video</a><a href="https://www.bilibili.com/video/BV1SR4y1X7bt">BiliBili</a></div></div>
+            </article>
+            <article class="project"><img src="images/research/midi.jpeg" alt="Neptune MIDI controller with knobs, sliders, and keys" loading="lazy" decoding="async" width="480" height="300"><div><h3>Neptune MIDI</h3><p>A 3D-printed controller for photo and video editing, with keys, encoders, sliders, and a joystick.</p><div class="text-links"><a href="https://github.com/alanzjl/NeptuneMIDI">GitHub</a><a href="https://www.youtube.com/watch?v=679nCupdGUM">Video</a><a href="https://www.bilibili.com/video/BV15q4y1V7St">BiliBili</a></div></div></article>
+            <article class="project"><img src="images/research/rs_slider.jpeg" alt="Motorized two-axis camera slider" loading="lazy" decoding="async" width="480" height="300"><div><h3>RS-Slider</h3><p>A mostly 3D-printed, motorized two-axis camera slider, tested with a 15 lb cinema rig.</p><p class="project-note">Work in progress</p></div></article>
+            <article class="project"><img src="images/research/rpi_hifi.jpeg" alt="Raspberry Pi AirPlay audio system" loading="lazy" decoding="async" width="480" height="300"><div><h3>Raspberry Pi AirPlay HiFi</h3><p>A compact AirPlay receiver, DAC, and amplifier built with a Pi Zero W and HiFiBerry.</p><div class="text-links"><a href="https://github.com/alanzjl/RPI_AirPlay_HiFi">GitHub</a></div></div></article>
+            <article class="project"><img src="images/research/filter_drawer.gif" alt="Two-inch astrophotography filter drawer" loading="lazy" decoding="async" width="480" height="300"><div><h3>Astrophotography filter drawer</h3><p>A 2-inch filter drawer connecting a telescope to a Nikon or Canon camera.</p><div class="text-links"><a href="https://github.com/alanzjl/FilterDrawer">GitHub</a></div></div></article>
+        </div>
+        <div class="software-note"><p><strong>On the software side</strong></p><p><a href="https://tapdrop.app">TapDrop ↗</a> is my peer-to-peer file-sharing app for any platform or network. I’m also building <a href="https://tpvortex.org/">tpvortex.org ↗</a>.</p></div>
+    </section>
+<section class="section" id="blog" aria-labelledby="writing-title">
+        <div class="section-heading"><h2 id="writing-title">Writing</h2><span class="section-aside">Notes from the workshop</span></div>
+        <article class="writing-item"><time datetime="2025-01-10">Jan 2025</time><div><h3><a href="blog/welcome.html">A place for research and build notes <span aria-hidden="true">↗</span></a></h3><p>Robotics, AI, and lessons from making things.</p></div></article>
+        <article class="writing-item"><time datetime="2022-07-01">Jul 2022</time><div><h3><a href="blog/alkaid-mount.html">Building an equatorial mount <span aria-hidden="true">↗</span></a></h3><p>Alkaid Mount, from design and machining to assembly.</p></div></article>
+    </section>
+</main>
+<footer class="site-footer"><span>Alan (Jialiang) Zhao</span><a href="#about">Back to top ↑</a></footer>
 </body>
-
 </html>
